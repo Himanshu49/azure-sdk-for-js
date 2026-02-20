@@ -102,17 +102,17 @@ importers:
         specifier: ^0.17.4
         version: 0.17.4
       cspell:
-        specifier: ^9.3.1
-        version: 9.4.0
+        specifier: ^9.6.0
+        version: 9.6.4
       prettier-plugin-packagejson:
-        specifier: ^2.5.19
-        version: 2.5.20(prettier@3.7.4)
+        specifier: ^2.5.21
+        version: 2.5.22(prettier@3.7.4)
       rimraf:
-        specifier: ^6.1.0
+        specifier: ^6.1.2
         version: 6.1.2
       turbo:
-        specifier: ^2.6.1
-        version: 2.7.2
+        specifier: ^2.7.4
+        version: 2.8.10
 
   common/tools/dev-tool:
     dependencies:
@@ -120,8 +120,8 @@ importers:
         specifier: npm:typescript@latest
         version: typescript@5.9.3
       '@_ts/min':
-        specifier: npm:typescript@~4.2.4
-        version: typescript@4.2.4
+        specifier: npm:typescript@~5.4.2
+        version: typescript@5.4.5
       '@azure/identity':
         specifier: catalog:internal
         version: 4.13.0
@@ -777,7 +777,7 @@ importers:
         specifier: ^1.11.1
         version: link:../../monitor/monitor-opentelemetry
       '@azure/monitor-opentelemetry-exporter':
-        specifier: ^1.0.0-beta.31
+        specifier: 1.0.0-beta.38
         version: link:../../monitor/monitor-opentelemetry-exporter
       '@azure/opentelemetry-instrumentation-azure-sdk':
         specifier: ^1.0.0-beta.7
@@ -883,7 +883,7 @@ importers:
         specifier: catalog:internal
         version: 4.13.0
       '@azure/monitor-opentelemetry-exporter':
-        specifier: 1.0.0-beta.36
+        specifier: 1.0.0-beta.38
         version: link:../../monitor/monitor-opentelemetry-exporter
       '@azure/opentelemetry-instrumentation-azure-sdk':
         specifier: 1.0.0-beta.7
@@ -958,7 +958,7 @@ importers:
         specifier: ^1.6.0
         version: link:../../core/core-auth
       '@azure/core-lro':
-        specifier: ^3.0.0
+        specifier: ^3.1.0
         version: link:../../core/core-lro
       '@azure/core-paging':
         specifier: ^1.5.0
@@ -1010,7 +1010,7 @@ importers:
         specifier: catalog:internal
         version: 4.13.0
       '@azure/monitor-opentelemetry':
-        specifier: ^1.14.2
+        specifier: ^1.15.1
         version: link:../../monitor/monitor-opentelemetry
       '@azure/opentelemetry-instrumentation-azure-sdk':
         specifier: 1.0.0-beta.7
@@ -1109,6 +1109,9 @@ importers:
       '@azure-tools/test-utils-vitest':
         specifier: workspace:^
         version: link:../../test-utils/test-utils-vitest
+      '@azure/ai-projects':
+        specifier: workspace:^
+        version: link:../ai-projects
       '@azure/dev-tool':
         specifier: workspace:^
         version: link:../../../common/tools/dev-tool
@@ -1212,91 +1215,6 @@ importers:
       cross-env:
         specifier: 'catalog:'
         version: 10.1.0
-      rimraf:
-        specifier: 'catalog:'
-        version: 6.1.2
-      tshy:
-        specifier: 'catalog:'
-        version: 3.1.0
-      typescript:
-        specifier: 'catalog:'
-        version: 5.9.3
-      vitest:
-        specifier: catalog:testing
-        version: 4.0.16(@opentelemetry/api@1.9.0)(@types/node@20.19.27)(@vitest/browser-playwright@4.0.16)(jsdom@16.7.0)(msw@2.7.3(@types/node@20.19.27)(typescript@5.9.3))(terser@5.39.0)(tsx@4.21.0)(yaml@2.8.2)
-
-  sdk/anomalydetector/ai-anomaly-detector-rest:
-    dependencies:
-      '@azure-rest/core-client':
-        specifier: ^2.3.1
-        version: link:../../core/core-client-rest
-      '@azure/core-auth':
-        specifier: ^1.9.0
-        version: link:../../core/core-auth
-      '@azure/core-lro':
-        specifier: ^2.7.2
-        version: 2.7.2
-      '@azure/core-paging':
-        specifier: ^1.6.2
-        version: link:../../core/core-paging
-      '@azure/core-rest-pipeline':
-        specifier: ^1.18.1
-        version: link:../../core/core-rest-pipeline
-      '@azure/logger':
-        specifier: ^1.1.4
-        version: link:../../core/logger
-      tslib:
-        specifier: ^2.8.1
-        version: 2.8.1
-    devDependencies:
-      '@azure-tools/test-credential':
-        specifier: workspace:^
-        version: link:../../test-utils/test-credential
-      '@azure-tools/test-recorder':
-        specifier: workspace:^
-        version: link:../../test-utils/recorder
-      '@azure-tools/test-utils-vitest':
-        specifier: workspace:^
-        version: link:../../test-utils/test-utils-vitest
-      '@azure/dev-tool':
-        specifier: workspace:^
-        version: link:../../../common/tools/dev-tool
-      '@azure/eslint-plugin-azure-sdk':
-        specifier: workspace:^
-        version: link:../../../common/tools/eslint-plugin-azure-sdk
-      '@azure/identity':
-        specifier: catalog:internal
-        version: 4.13.0
-      '@types/node':
-        specifier: 'catalog:'
-        version: 20.19.27
-      '@vitest/browser-playwright':
-        specifier: catalog:testing
-        version: 4.0.16(msw@2.7.3(@types/node@20.19.27)(typescript@5.9.3))(playwright@1.57.0)(vite@7.3.0(@types/node@20.19.27)(terser@5.39.0)(tsx@4.21.0)(yaml@2.8.2))(vitest@4.0.16)
-      '@vitest/coverage-istanbul':
-        specifier: catalog:testing
-        version: 4.0.16(vitest@4.0.16)
-      autorest:
-        specifier: 'catalog:'
-        version: 3.7.2
-      cross-env:
-        specifier: 'catalog:'
-        version: 10.1.0
-      csv-parse:
-        specifier: ^6.0.0
-        version: 6.1.0
-      dotenv:
-        specifier: catalog:testing
-        version: 16.6.1
-      eslint:
-        specifier: 'catalog:'
-        version: 9.39.2
-      playwright:
-        specifier: catalog:testing
-        version: 1.57.0
-      prettier:
-        specifier: 'catalog:'
-        version: 3.7.4
       rimraf:
         specifier: 'catalog:'
         version: 6.1.2
@@ -1805,24 +1723,27 @@ importers:
 
   sdk/appconfiguration/arm-appconfiguration:
     dependencies:
+      '@azure-rest/core-client':
+        specifier: ^2.3.1
+        version: link:../../core/core-client-rest
       '@azure/abort-controller':
         specifier: ^2.1.2
         version: link:../../core/abort-controller
       '@azure/core-auth':
         specifier: ^1.9.0
         version: link:../../core/core-auth
-      '@azure/core-client':
-        specifier: ^1.9.2
-        version: link:../../core/core-client
       '@azure/core-lro':
-        specifier: ^2.5.4
-        version: 2.7.2
-      '@azure/core-paging':
-        specifier: ^1.6.2
-        version: link:../../core/core-paging
+        specifier: ^3.1.0
+        version: link:../../core/core-lro
       '@azure/core-rest-pipeline':
-        specifier: ^1.19.0
+        specifier: ^1.20.0
         version: link:../../core/core-rest-pipeline
+      '@azure/core-util':
+        specifier: ^1.12.0
+        version: link:../../core/core-util
+      '@azure/logger':
+        specifier: ^1.2.0
+        version: link:../../core/logger
       tslib:
         specifier: ^2.8.1
         version: 2.8.1
@@ -1839,12 +1760,12 @@ importers:
       '@azure/dev-tool':
         specifier: workspace:^
         version: link:../../../common/tools/dev-tool
+      '@azure/eslint-plugin-azure-sdk':
+        specifier: workspace:^
+        version: link:../../../common/tools/eslint-plugin-azure-sdk
       '@azure/identity':
         specifier: catalog:internal
         version: 4.13.0
-      '@azure/logger':
-        specifier: ^1.1.4
-        version: link:../../core/logger
       '@types/node':
         specifier: 'catalog:'
         version: 20.19.27
@@ -1860,9 +1781,15 @@ importers:
       dotenv:
         specifier: catalog:testing
         version: 16.6.1
+      eslint:
+        specifier: 'catalog:'
+        version: 9.39.2
       playwright:
         specifier: catalog:testing
         version: 1.57.0
+      prettier:
+        specifier: 'catalog:'
+        version: 3.7.4
       rimraf:
         specifier: 'catalog:'
         version: 6.1.2
@@ -3272,6 +3199,106 @@ importers:
         specifier: catalog:testing
         version: 4.0.16(@opentelemetry/api@1.9.0)(@types/node@20.19.27)(@vitest/browser-playwright@4.0.16)(jsdom@16.7.0)(msw@2.7.3(@types/node@20.19.27)(typescript@5.9.3))(terser@5.39.0)(tsx@4.21.0)(yaml@2.8.2)
 
+  sdk/batch/batch:
+    dependencies:
+      '@azure-rest/core-client':
+        specifier: ^2.3.1
+        version: link:../../core/core-client-rest
+      '@azure/abort-controller':
+        specifier: ^2.1.2
+        version: link:../../core/abort-controller
+      '@azure/core-auth':
+        specifier: ^1.9.0
+        version: link:../../core/core-auth
+      '@azure/core-lro':
+        specifier: ^3.1.0
+        version: link:../../core/core-lro
+      '@azure/core-rest-pipeline':
+        specifier: ^1.20.0
+        version: link:../../core/core-rest-pipeline
+      '@azure/core-util':
+        specifier: ^1.12.0
+        version: link:../../core/core-util
+      '@azure/logger':
+        specifier: ^1.2.0
+        version: link:../../core/logger
+      tslib:
+        specifier: ^2.8.1
+        version: 2.8.1
+    devDependencies:
+      '@azure-tools/test-credential':
+        specifier: workspace:^
+        version: link:../../test-utils/test-credential
+      '@azure-tools/test-recorder':
+        specifier: workspace:^
+        version: link:../../test-utils/recorder
+      '@azure-tools/test-utils-vitest':
+        specifier: workspace:^
+        version: link:../../test-utils/test-utils-vitest
+      '@azure/arm-authorization':
+        specifier: workspace:^
+        version: link:../../authorization/arm-authorization
+      '@azure/arm-batch':
+        specifier: workspace:^
+        version: link:../arm-batch
+      '@azure/arm-compute':
+        specifier: workspace:^
+        version: link:../../compute/arm-compute
+      '@azure/arm-keyvault':
+        specifier: workspace:^
+        version: link:../../keyvault/arm-keyvault
+      '@azure/arm-resources':
+        specifier: catalog:arm
+        version: 5.2.0
+      '@azure/dev-tool':
+        specifier: workspace:^
+        version: link:../../../common/tools/dev-tool
+      '@azure/eslint-plugin-azure-sdk':
+        specifier: workspace:^
+        version: link:../../../common/tools/eslint-plugin-azure-sdk
+      '@azure/identity':
+        specifier: catalog:internal
+        version: 4.13.0
+      '@azure/keyvault-keys':
+        specifier: workspace:^
+        version: link:../../keyvault/keyvault-keys
+      '@types/node':
+        specifier: 'catalog:'
+        version: 20.19.27
+      '@vitest/browser-playwright':
+        specifier: catalog:testing
+        version: 4.0.16(msw@2.7.3(@types/node@20.19.27)(typescript@5.9.3))(playwright@1.57.0)(vite@7.3.0(@types/node@20.19.27)(terser@5.39.0)(tsx@4.21.0)(yaml@2.8.2))(vitest@4.0.16)
+      '@vitest/coverage-istanbul':
+        specifier: catalog:testing
+        version: 4.0.16(vitest@4.0.16)
+      cross-env:
+        specifier: 'catalog:'
+        version: 10.1.0
+      dotenv:
+        specifier: catalog:testing
+        version: 16.6.1
+      eslint:
+        specifier: 'catalog:'
+        version: 9.39.2
+      playwright:
+        specifier: catalog:testing
+        version: 1.57.0
+      prettier:
+        specifier: 'catalog:'
+        version: 3.7.4
+      rimraf:
+        specifier: 'catalog:'
+        version: 6.1.2
+      tshy:
+        specifier: 'catalog:'
+        version: 3.1.0
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+      vitest:
+        specifier: catalog:testing
+        version: 4.0.16(@opentelemetry/api@1.9.0)(@types/node@20.19.27)(@vitest/browser-playwright@4.0.16)(jsdom@16.7.0)(msw@2.7.3(@types/node@20.19.27)(typescript@5.9.3))(terser@5.39.0)(tsx@4.21.0)(yaml@2.8.2)
+
   sdk/batch/batch-rest:
     dependencies:
       '@azure-rest/core-client':
@@ -4555,16 +4582,16 @@ importers:
         specifier: ^1.9.0
         version: link:../../core/core-auth
       '@azure/core-client':
-        specifier: ^1.9.2
+        specifier: ^1.9.3
         version: link:../../core/core-client
       '@azure/core-lro':
-        specifier: ^2.7.2
+        specifier: ^2.5.4
         version: 2.7.2
       '@azure/core-paging':
-        specifier: ^1.2.0
+        specifier: ^1.6.2
         version: link:../../core/core-paging
       '@azure/core-rest-pipeline':
-        specifier: ^1.18.2
+        specifier: ^1.19.1
         version: link:../../core/core-rest-pipeline
       tslib:
         specifier: ^2.8.1
@@ -4586,7 +4613,7 @@ importers:
         specifier: catalog:internal
         version: 4.13.0
       '@azure/logger':
-        specifier: ^1.1.4
+        specifier: workspace:^
         version: link:../../core/logger
       '@types/node':
         specifier: 'catalog:'
@@ -4603,9 +4630,15 @@ importers:
       dotenv:
         specifier: catalog:testing
         version: 16.6.1
+      eslint:
+        specifier: 'catalog:'
+        version: 9.39.2
       playwright:
         specifier: catalog:testing
         version: 1.57.0
+      prettier:
+        specifier: 'catalog:'
+        version: 3.7.4
       rimraf:
         specifier: 'catalog:'
         version: 6.1.2
@@ -7050,24 +7083,27 @@ importers:
 
   sdk/containerregistry/arm-containerregistry:
     dependencies:
+      '@azure-rest/core-client':
+        specifier: ^2.3.1
+        version: link:../../core/core-client-rest
       '@azure/abort-controller':
         specifier: ^2.1.2
         version: link:../../core/abort-controller
       '@azure/core-auth':
         specifier: ^1.9.0
         version: link:../../core/core-auth
-      '@azure/core-client':
-        specifier: ^1.9.3
-        version: link:../../core/core-client
       '@azure/core-lro':
-        specifier: ^2.5.4
-        version: 2.7.2
-      '@azure/core-paging':
-        specifier: ^1.6.2
-        version: link:../../core/core-paging
+        specifier: ^3.1.0
+        version: link:../../core/core-lro
       '@azure/core-rest-pipeline':
-        specifier: ^1.19.1
+        specifier: ^1.20.0
         version: link:../../core/core-rest-pipeline
+      '@azure/core-util':
+        specifier: ^1.12.0
+        version: link:../../core/core-util
+      '@azure/logger':
+        specifier: ^1.2.0
+        version: link:../../core/logger
       tslib:
         specifier: ^2.8.1
         version: 2.8.1
@@ -7084,12 +7120,12 @@ importers:
       '@azure/dev-tool':
         specifier: workspace:^
         version: link:../../../common/tools/dev-tool
+      '@azure/eslint-plugin-azure-sdk':
+        specifier: workspace:^
+        version: link:../../../common/tools/eslint-plugin-azure-sdk
       '@azure/identity':
         specifier: catalog:internal
         version: 4.13.0
-      '@azure/logger':
-        specifier: workspace:^
-        version: link:../../core/logger
       '@types/node':
         specifier: 'catalog:'
         version: 20.19.27
@@ -14301,24 +14337,27 @@ importers:
 
   sdk/healthbot/arm-healthbot:
     dependencies:
+      '@azure-rest/core-client':
+        specifier: ^2.3.1
+        version: link:../../core/core-client-rest
       '@azure/abort-controller':
         specifier: ^2.1.2
         version: link:../../core/abort-controller
       '@azure/core-auth':
         specifier: ^1.9.0
         version: link:../../core/core-auth
-      '@azure/core-client':
-        specifier: ^1.9.2
-        version: link:../../core/core-client
       '@azure/core-lro':
-        specifier: ^2.2.0
-        version: 2.7.2
-      '@azure/core-paging':
-        specifier: ^1.6.2
-        version: link:../../core/core-paging
+        specifier: ^3.1.0
+        version: link:../../core/core-lro
       '@azure/core-rest-pipeline':
-        specifier: ^1.18.2
+        specifier: ^1.20.0
         version: link:../../core/core-rest-pipeline
+      '@azure/core-util':
+        specifier: ^1.12.0
+        version: link:../../core/core-util
+      '@azure/logger':
+        specifier: ^1.2.0
+        version: link:../../core/logger
       tslib:
         specifier: ^2.8.1
         version: 2.8.1
@@ -14335,12 +14374,12 @@ importers:
       '@azure/dev-tool':
         specifier: workspace:^
         version: link:../../../common/tools/dev-tool
+      '@azure/eslint-plugin-azure-sdk':
+        specifier: workspace:^
+        version: link:../../../common/tools/eslint-plugin-azure-sdk
       '@azure/identity':
         specifier: catalog:internal
         version: 4.13.0
-      '@azure/logger':
-        specifier: ^1.1.4
-        version: link:../../core/logger
       '@types/node':
         specifier: 'catalog:'
         version: 20.19.27
@@ -14353,9 +14392,18 @@ importers:
       cross-env:
         specifier: 'catalog:'
         version: 10.1.0
+      dotenv:
+        specifier: catalog:testing
+        version: 16.6.1
+      eslint:
+        specifier: 'catalog:'
+        version: 9.39.2
       playwright:
         specifier: catalog:testing
         version: 1.57.0
+      prettier:
+        specifier: 'catalog:'
+        version: 3.7.4
       rimraf:
         specifier: 'catalog:'
         version: 6.1.2
@@ -14578,252 +14626,6 @@ importers:
       '@vitest/coverage-istanbul':
         specifier: catalog:testing
         version: 4.0.16(vitest@4.0.16)
-      cross-env:
-        specifier: 'catalog:'
-        version: 10.1.0
-      dotenv:
-        specifier: catalog:testing
-        version: 16.6.1
-      eslint:
-        specifier: 'catalog:'
-        version: 9.39.2
-      playwright:
-        specifier: catalog:testing
-        version: 1.57.0
-      prettier:
-        specifier: 'catalog:'
-        version: 3.7.4
-      rimraf:
-        specifier: 'catalog:'
-        version: 6.1.2
-      tshy:
-        specifier: 'catalog:'
-        version: 3.1.0
-      typescript:
-        specifier: 'catalog:'
-        version: 5.9.3
-      vitest:
-        specifier: catalog:testing
-        version: 4.0.16(@opentelemetry/api@1.9.0)(@types/node@20.19.27)(@vitest/browser-playwright@4.0.16)(jsdom@16.7.0)(msw@2.7.3(@types/node@20.19.27)(typescript@5.9.3))(terser@5.39.0)(tsx@4.21.0)(yaml@2.8.2)
-
-  sdk/healthinsights/health-insights-cancerprofiling-rest:
-    dependencies:
-      '@azure-rest/core-client':
-        specifier: ^2.3.1
-        version: link:../../core/core-client-rest
-      '@azure/abort-controller':
-        specifier: ^2.1.2
-        version: link:../../core/abort-controller
-      '@azure/core-auth':
-        specifier: ^1.9.0
-        version: link:../../core/core-auth
-      '@azure/core-lro':
-        specifier: ^2.7.2
-        version: 2.7.2
-      '@azure/core-rest-pipeline':
-        specifier: ^1.19.0
-        version: link:../../core/core-rest-pipeline
-      '@azure/logger':
-        specifier: ^1.1.4
-        version: link:../../core/logger
-      tslib:
-        specifier: ^2.8.1
-        version: 2.8.1
-    devDependencies:
-      '@azure-tools/test-credential':
-        specifier: workspace:^
-        version: link:../../test-utils/test-credential
-      '@azure-tools/test-recorder':
-        specifier: workspace:^
-        version: link:../../test-utils/recorder
-      '@azure-tools/test-utils-vitest':
-        specifier: workspace:^
-        version: link:../../test-utils/test-utils-vitest
-      '@azure/dev-tool':
-        specifier: workspace:^
-        version: link:../../../common/tools/dev-tool
-      '@azure/eslint-plugin-azure-sdk':
-        specifier: workspace:^
-        version: link:../../../common/tools/eslint-plugin-azure-sdk
-      '@azure/identity':
-        specifier: catalog:internal
-        version: 4.13.0
-      '@types/node':
-        specifier: 'catalog:'
-        version: 20.19.27
-      '@vitest/browser-playwright':
-        specifier: catalog:testing
-        version: 4.0.16(msw@2.7.3(@types/node@20.19.27)(typescript@5.9.3))(playwright@1.57.0)(vite@7.3.0(@types/node@20.19.27)(terser@5.39.0)(tsx@4.21.0)(yaml@2.8.2))(vitest@4.0.16)
-      '@vitest/coverage-istanbul':
-        specifier: catalog:testing
-        version: 4.0.16(vitest@4.0.16)
-      autorest:
-        specifier: 'catalog:'
-        version: 3.7.2
-      cross-env:
-        specifier: 'catalog:'
-        version: 10.1.0
-      dotenv:
-        specifier: catalog:testing
-        version: 16.6.1
-      eslint:
-        specifier: 'catalog:'
-        version: 9.39.2
-      playwright:
-        specifier: catalog:testing
-        version: 1.57.0
-      prettier:
-        specifier: 'catalog:'
-        version: 3.7.4
-      rimraf:
-        specifier: 'catalog:'
-        version: 6.1.2
-      tshy:
-        specifier: 'catalog:'
-        version: 3.1.0
-      typescript:
-        specifier: 'catalog:'
-        version: 5.9.3
-      vitest:
-        specifier: catalog:testing
-        version: 4.0.16(@opentelemetry/api@1.9.0)(@types/node@20.19.27)(@vitest/browser-playwright@4.0.16)(jsdom@16.7.0)(msw@2.7.3(@types/node@20.19.27)(typescript@5.9.3))(terser@5.39.0)(tsx@4.21.0)(yaml@2.8.2)
-
-  sdk/healthinsights/health-insights-clinicalmatching-rest:
-    dependencies:
-      '@azure-rest/core-client':
-        specifier: ^2.3.1
-        version: link:../../core/core-client-rest
-      '@azure/abort-controller':
-        specifier: ^2.1.2
-        version: link:../../core/abort-controller
-      '@azure/core-auth':
-        specifier: ^1.9.0
-        version: link:../../core/core-auth
-      '@azure/core-lro':
-        specifier: ^2.7.2
-        version: 2.7.2
-      '@azure/core-rest-pipeline':
-        specifier: ^1.19.0
-        version: link:../../core/core-rest-pipeline
-      '@azure/logger':
-        specifier: ^1.1.4
-        version: link:../../core/logger
-      tslib:
-        specifier: ^2.8.1
-        version: 2.8.1
-    devDependencies:
-      '@azure-tools/test-credential':
-        specifier: workspace:^
-        version: link:../../test-utils/test-credential
-      '@azure-tools/test-recorder':
-        specifier: workspace:^
-        version: link:../../test-utils/recorder
-      '@azure-tools/test-utils-vitest':
-        specifier: workspace:^
-        version: link:../../test-utils/test-utils-vitest
-      '@azure/dev-tool':
-        specifier: workspace:^
-        version: link:../../../common/tools/dev-tool
-      '@azure/eslint-plugin-azure-sdk':
-        specifier: workspace:^
-        version: link:../../../common/tools/eslint-plugin-azure-sdk
-      '@azure/identity':
-        specifier: catalog:internal
-        version: 4.13.0
-      '@types/node':
-        specifier: 'catalog:'
-        version: 20.19.27
-      '@vitest/browser-playwright':
-        specifier: catalog:testing
-        version: 4.0.16(msw@2.7.3(@types/node@20.19.27)(typescript@5.9.3))(playwright@1.57.0)(vite@7.3.0(@types/node@20.19.27)(terser@5.39.0)(tsx@4.21.0)(yaml@2.8.2))(vitest@4.0.16)
-      '@vitest/coverage-istanbul':
-        specifier: catalog:testing
-        version: 4.0.16(vitest@4.0.16)
-      autorest:
-        specifier: 'catalog:'
-        version: 3.7.2
-      cross-env:
-        specifier: 'catalog:'
-        version: 10.1.0
-      dotenv:
-        specifier: catalog:testing
-        version: 16.6.1
-      eslint:
-        specifier: 'catalog:'
-        version: 9.39.2
-      playwright:
-        specifier: catalog:testing
-        version: 1.57.0
-      prettier:
-        specifier: 'catalog:'
-        version: 3.7.4
-      rimraf:
-        specifier: 'catalog:'
-        version: 6.1.2
-      tshy:
-        specifier: 'catalog:'
-        version: 3.1.0
-      typescript:
-        specifier: 'catalog:'
-        version: 5.9.3
-      vitest:
-        specifier: catalog:testing
-        version: 4.0.16(@opentelemetry/api@1.9.0)(@types/node@20.19.27)(@vitest/browser-playwright@4.0.16)(jsdom@16.7.0)(msw@2.7.3(@types/node@20.19.27)(typescript@5.9.3))(terser@5.39.0)(tsx@4.21.0)(yaml@2.8.2)
-
-  sdk/healthinsights/health-insights-radiologyinsights-rest:
-    dependencies:
-      '@azure-rest/core-client':
-        specifier: ^2.3.1
-        version: link:../../core/core-client-rest
-      '@azure/abort-controller':
-        specifier: ^2.1.2
-        version: link:../../core/abort-controller
-      '@azure/core-auth':
-        specifier: ^1.9.0
-        version: link:../../core/core-auth
-      '@azure/core-lro':
-        specifier: ^3.2.0
-        version: link:../../core/core-lro
-      '@azure/core-rest-pipeline':
-        specifier: ^1.19.0
-        version: link:../../core/core-rest-pipeline
-      '@azure/logger':
-        specifier: ^1.1.4
-        version: link:../../core/logger
-      tslib:
-        specifier: ^2.8.1
-        version: 2.8.1
-    devDependencies:
-      '@azure-tools/test-credential':
-        specifier: workspace:^
-        version: link:../../test-utils/test-credential
-      '@azure-tools/test-recorder':
-        specifier: workspace:^
-        version: link:../../test-utils/recorder
-      '@azure-tools/test-utils-vitest':
-        specifier: workspace:^
-        version: link:../../test-utils/test-utils-vitest
-      '@azure/dev-tool':
-        specifier: workspace:^
-        version: link:../../../common/tools/dev-tool
-      '@azure/eslint-plugin-azure-sdk':
-        specifier: workspace:^
-        version: link:../../../common/tools/eslint-plugin-azure-sdk
-      '@azure/identity':
-        specifier: catalog:internal
-        version: 4.13.0
-      '@types/node':
-        specifier: 'catalog:'
-        version: 20.19.27
-      '@vitest/browser-playwright':
-        specifier: catalog:testing
-        version: 4.0.16(msw@2.7.3(@types/node@20.19.27)(typescript@5.9.3))(playwright@1.57.0)(vite@7.3.0(@types/node@20.19.27)(terser@5.39.0)(tsx@4.21.0)(yaml@2.8.2))(vitest@4.0.16)
-      '@vitest/coverage-istanbul':
-        specifier: catalog:testing
-        version: 4.0.16(vitest@4.0.16)
-      autorest:
-        specifier: 'catalog:'
-        version: 3.7.2
       cross-env:
         specifier: 'catalog:'
         version: 10.1.0
@@ -19229,6 +19031,88 @@ importers:
         specifier: catalog:testing
         version: 4.0.16(@opentelemetry/api@1.9.0)(@types/node@20.19.27)(@vitest/browser-playwright@4.0.16)(jsdom@16.7.0)(msw@2.7.3(@types/node@20.19.27)(typescript@5.9.3))(terser@5.39.0)(tsx@4.21.0)(yaml@2.8.2)
 
+  sdk/managedops/arm-managedops:
+    dependencies:
+      '@azure-rest/core-client':
+        specifier: ^2.3.1
+        version: link:../../core/core-client-rest
+      '@azure/abort-controller':
+        specifier: ^2.1.2
+        version: link:../../core/abort-controller
+      '@azure/core-auth':
+        specifier: ^1.9.0
+        version: link:../../core/core-auth
+      '@azure/core-lro':
+        specifier: ^3.1.0
+        version: link:../../core/core-lro
+      '@azure/core-rest-pipeline':
+        specifier: ^1.20.0
+        version: link:../../core/core-rest-pipeline
+      '@azure/core-util':
+        specifier: ^1.12.0
+        version: link:../../core/core-util
+      '@azure/logger':
+        specifier: ^1.2.0
+        version: link:../../core/logger
+      tslib:
+        specifier: ^2.8.1
+        version: 2.8.1
+    devDependencies:
+      '@azure-tools/test-credential':
+        specifier: workspace:^
+        version: link:../../test-utils/test-credential
+      '@azure-tools/test-recorder':
+        specifier: workspace:^
+        version: link:../../test-utils/recorder
+      '@azure-tools/test-utils-vitest':
+        specifier: workspace:^
+        version: link:../../test-utils/test-utils-vitest
+      '@azure/dev-tool':
+        specifier: workspace:^
+        version: link:../../../common/tools/dev-tool
+      '@azure/eslint-plugin-azure-sdk':
+        specifier: workspace:^
+        version: link:../../../common/tools/eslint-plugin-azure-sdk
+      '@azure/identity':
+        specifier: catalog:internal
+        version: 4.13.0
+      '@types/node':
+        specifier: 'catalog:'
+        version: 20.19.27
+      '@vitest/browser-playwright':
+        specifier: catalog:testing
+        version: 4.0.16(msw@2.7.3(@types/node@20.19.27)(typescript@5.9.3))(playwright@1.57.0)(vite@7.3.0(@types/node@20.19.27)(terser@5.39.0)(tsx@4.21.0)(yaml@2.8.2))(vitest@4.0.16)
+      '@vitest/coverage-istanbul':
+        specifier: catalog:testing
+        version: 4.0.16(vitest@4.0.16)
+      cross-env:
+        specifier: 'catalog:'
+        version: 10.1.0
+      dotenv:
+        specifier: catalog:testing
+        version: 16.6.1
+      eslint:
+        specifier: 'catalog:'
+        version: 9.39.2
+      playwright:
+        specifier: catalog:testing
+        version: 1.57.0
+      prettier:
+        specifier: 'catalog:'
+        version: 3.7.4
+      rimraf:
+        specifier: 'catalog:'
+        version: 6.1.2
+      tshy:
+        specifier: 'catalog:'
+        version: 3.1.0
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+      vitest:
+        specifier: catalog:testing
+        version: 4.0.16(@opentelemetry/api@1.9.0)(@types/node@20.19.27)(@vitest/browser-playwright@4.0.16)(jsdom@16.7.0)(msw@2.7.3(@types/node@20.19.27)(typescript@5.9.3))(terser@5.39.0)(tsx@4.21.0)(yaml@2.8.2)
+
   sdk/managementgroups/arm-managementgroups:
     dependencies:
       '@azure/abort-controller':
@@ -20056,134 +19940,6 @@ importers:
         specifier: catalog:testing
         version: 4.0.16(@opentelemetry/api@1.9.0)(@types/node@20.19.27)(@vitest/browser-playwright@4.0.16)(jsdom@16.7.0)(msw@2.7.3(@types/node@20.19.27)(typescript@5.9.3))(terser@5.39.0)(tsx@4.21.0)(yaml@2.8.2)
 
-  sdk/metricsadvisor/ai-metrics-advisor:
-    dependencies:
-      '@azure/core-auth':
-        specifier: ^1.9.0
-        version: link:../../core/core-auth
-      '@azure/core-client':
-        specifier: ^1.9.2
-        version: link:../../core/core-client
-      '@azure/core-http-compat':
-        specifier: ^2.1.2
-        version: link:../../core/core-http-compat
-      '@azure/core-lro':
-        specifier: ^2.7.2
-        version: 2.7.2
-      '@azure/core-paging':
-        specifier: ^1.6.2
-        version: link:../../core/core-paging
-      '@azure/core-rest-pipeline':
-        specifier: ^1.19.0
-        version: link:../../core/core-rest-pipeline
-      '@azure/core-tracing':
-        specifier: ^1.2.0
-        version: link:../../core/core-tracing
-      '@azure/logger':
-        specifier: ^1.1.4
-        version: link:../../core/logger
-      tslib:
-        specifier: ^2.8.1
-        version: 2.8.1
-    devDependencies:
-      '@azure-tools/test-credential':
-        specifier: workspace:^
-        version: link:../../test-utils/test-credential
-      '@azure-tools/test-recorder':
-        specifier: workspace:^
-        version: link:../../test-utils/recorder
-      '@azure-tools/test-utils-vitest':
-        specifier: workspace:^
-        version: link:../../test-utils/test-utils-vitest
-      '@azure/dev-tool':
-        specifier: workspace:^
-        version: link:../../../common/tools/dev-tool
-      '@azure/eslint-plugin-azure-sdk':
-        specifier: workspace:^
-        version: link:../../../common/tools/eslint-plugin-azure-sdk
-      '@azure/identity':
-        specifier: catalog:internal
-        version: 4.13.0
-      '@types/node':
-        specifier: 'catalog:'
-        version: 20.19.27
-      '@vitest/browser-playwright':
-        specifier: catalog:testing
-        version: 4.0.16(msw@2.7.3(@types/node@20.19.27)(typescript@5.9.3))(playwright@1.57.0)(vite@7.3.0(@types/node@20.19.27)(terser@5.39.0)(tsx@4.21.0)(yaml@2.8.2))(vitest@4.0.16)
-      '@vitest/coverage-istanbul':
-        specifier: catalog:testing
-        version: 4.0.16(vitest@4.0.16)
-      cross-env:
-        specifier: 'catalog:'
-        version: 10.1.0
-      dotenv:
-        specifier: catalog:testing
-        version: 16.6.1
-      eslint:
-        specifier: 'catalog:'
-        version: 9.39.2
-      playwright:
-        specifier: catalog:testing
-        version: 1.57.0
-      prettier:
-        specifier: 'catalog:'
-        version: 3.7.4
-      rimraf:
-        specifier: 'catalog:'
-        version: 6.1.2
-      tshy:
-        specifier: 'catalog:'
-        version: 3.1.0
-      typescript:
-        specifier: 'catalog:'
-        version: 5.9.3
-      vitest:
-        specifier: catalog:testing
-        version: 4.0.16(@opentelemetry/api@1.9.0)(@types/node@20.19.27)(@vitest/browser-playwright@4.0.16)(jsdom@16.7.0)(msw@2.7.3(@types/node@20.19.27)(typescript@5.9.3))(terser@5.39.0)(tsx@4.21.0)(yaml@2.8.2)
-
-  sdk/metricsadvisor/ai-metrics-advisor-perf-tests:
-    dependencies:
-      '@azure-tools/test-perf':
-        specifier: ^1.0.0
-        version: link:../../test-utils/perf
-      '@azure/ai-metrics-advisor':
-        specifier: ^1.0.0
-        version: link:../ai-metrics-advisor
-      dotenv:
-        specifier: ^16.0.0
-        version: 16.6.1
-      tslib:
-        specifier: ^2.8.1
-        version: 2.8.1
-    devDependencies:
-      '@azure/dev-tool':
-        specifier: workspace:^
-        version: link:../../../common/tools/dev-tool
-      '@azure/eslint-plugin-azure-sdk':
-        specifier: workspace:^
-        version: link:../../../common/tools/eslint-plugin-azure-sdk
-      '@types/node':
-        specifier: 'catalog:'
-        version: 20.19.27
-      cross-env:
-        specifier: 'catalog:'
-        version: 10.1.0
-      eslint:
-        specifier: 'catalog:'
-        version: 9.39.2
-      prettier:
-        specifier: 'catalog:'
-        version: 3.7.4
-      rimraf:
-        specifier: 'catalog:'
-        version: 6.1.2
-      tshy:
-        specifier: 'catalog:'
-        version: 3.1.0
-      typescript:
-        specifier: 'catalog:'
-        version: 5.9.3
-
   sdk/migrate/arm-migrate:
     dependencies:
       '@azure/core-auth':
@@ -20868,7 +20624,7 @@ importers:
         specifier: ^1.3.0
         version: link:../../core/logger
       '@azure/monitor-opentelemetry-exporter':
-        specifier: ^1.0.0-beta.36
+        specifier: 1.0.0-beta.38
         version: link:../monitor-opentelemetry-exporter
       '@azure/opentelemetry-instrumentation-azure-sdk':
         specifier: ^1.0.0-beta.9
@@ -21101,7 +20857,7 @@ importers:
         specifier: ^1.0.0
         version: link:../../test-utils/perf
       '@azure/monitor-opentelemetry':
-        specifier: ^1.14.2
+        specifier: ^1.15.1
         version: link:../monitor-opentelemetry
       '@opentelemetry/api':
         specifier: ^1.9.0
@@ -21199,7 +20955,7 @@ importers:
         specifier: catalog:internal
         version: 4.13.0
       '@azure/monitor-opentelemetry-exporter':
-        specifier: 1.0.0-beta.36
+        specifier: 1.0.0-beta.38
         version: link:../monitor-opentelemetry-exporter
       '@opentelemetry/api':
         specifier: ^1.9.0
@@ -21290,7 +21046,7 @@ importers:
         specifier: catalog:internal
         version: 4.13.0
       '@azure/monitor-opentelemetry-exporter':
-        specifier: 1.0.0-beta.36
+        specifier: 1.0.0-beta.38
         version: link:../monitor-opentelemetry-exporter
       '@opentelemetry/api':
         specifier: ^1.9.0
@@ -23411,210 +23167,6 @@ importers:
         specifier: catalog:testing
         version: 4.0.16(@opentelemetry/api@1.9.0)(@types/node@20.19.27)(@vitest/browser-playwright@4.0.16)(jsdom@16.7.0)(msw@2.7.3(@types/node@20.19.27)(typescript@5.9.3))(terser@5.39.0)(tsx@4.21.0)(yaml@2.8.2)
 
-  sdk/playwrighttesting/arm-playwrighttesting:
-    dependencies:
-      '@azure-rest/core-client':
-        specifier: ^2.3.1
-        version: link:../../core/core-client-rest
-      '@azure/abort-controller':
-        specifier: ^2.1.2
-        version: link:../../core/abort-controller
-      '@azure/core-auth':
-        specifier: ^1.9.0
-        version: link:../../core/core-auth
-      '@azure/core-lro':
-        specifier: ^3.1.0
-        version: link:../../core/core-lro
-      '@azure/core-rest-pipeline':
-        specifier: ^1.19.0
-        version: link:../../core/core-rest-pipeline
-      '@azure/core-util':
-        specifier: ^1.11.0
-        version: link:../../core/core-util
-      '@azure/logger':
-        specifier: ^1.1.4
-        version: link:../../core/logger
-      tslib:
-        specifier: ^2.8.1
-        version: 2.8.1
-    devDependencies:
-      '@azure-tools/test-credential':
-        specifier: workspace:^
-        version: link:../../test-utils/test-credential
-      '@azure-tools/test-recorder':
-        specifier: workspace:^
-        version: link:../../test-utils/recorder
-      '@azure-tools/test-utils-vitest':
-        specifier: workspace:^
-        version: link:../../test-utils/test-utils-vitest
-      '@azure/dev-tool':
-        specifier: workspace:^
-        version: link:../../../common/tools/dev-tool
-      '@azure/eslint-plugin-azure-sdk':
-        specifier: workspace:^
-        version: link:../../../common/tools/eslint-plugin-azure-sdk
-      '@azure/identity':
-        specifier: catalog:internal
-        version: 4.13.0
-      '@types/node':
-        specifier: 'catalog:'
-        version: 20.19.27
-      '@vitest/browser-playwright':
-        specifier: catalog:testing
-        version: 4.0.16(msw@2.7.3(@types/node@20.19.27)(typescript@5.9.3))(playwright@1.57.0)(vite@7.3.0(@types/node@20.19.27)(terser@5.39.0)(tsx@4.21.0)(yaml@2.8.2))(vitest@4.0.16)
-      '@vitest/coverage-istanbul':
-        specifier: catalog:testing
-        version: 4.0.16(vitest@4.0.16)
-      cross-env:
-        specifier: 'catalog:'
-        version: 10.1.0
-      dotenv:
-        specifier: catalog:testing
-        version: 16.6.1
-      eslint:
-        specifier: 'catalog:'
-        version: 9.39.2
-      playwright:
-        specifier: catalog:testing
-        version: 1.57.0
-      prettier:
-        specifier: 'catalog:'
-        version: 3.7.4
-      rimraf:
-        specifier: 'catalog:'
-        version: 6.1.2
-      tshy:
-        specifier: 'catalog:'
-        version: 3.1.0
-      typescript:
-        specifier: 'catalog:'
-        version: 5.9.3
-      vitest:
-        specifier: catalog:testing
-        version: 4.0.16(@opentelemetry/api@1.9.0)(@types/node@20.19.27)(@vitest/browser-playwright@4.0.16)(jsdom@16.7.0)(msw@2.7.3(@types/node@20.19.27)(typescript@5.9.3))(terser@5.39.0)(tsx@4.21.0)(yaml@2.8.2)
-
-  sdk/playwrighttesting/create-microsoft-playwright-testing:
-    dependencies:
-      prompts:
-        specifier: ^2.4.2
-        version: 2.4.2
-      tslib:
-        specifier: ^2.8.1
-        version: 2.8.1
-    devDependencies:
-      '@azure-tools/test-utils-vitest':
-        specifier: workspace:^
-        version: link:../../test-utils/test-utils-vitest
-      '@azure/dev-tool':
-        specifier: workspace:^
-        version: link:../../../common/tools/dev-tool
-      '@azure/eslint-plugin-azure-sdk':
-        specifier: workspace:^
-        version: link:../../../common/tools/eslint-plugin-azure-sdk
-      '@azure/logger':
-        specifier: ^1.1.4
-        version: link:../../core/logger
-      '@types/node':
-        specifier: 'catalog:'
-        version: 20.19.27
-      '@types/prompts':
-        specifier: ^2.4.9
-        version: 2.4.9
-      '@vitest/browser-playwright':
-        specifier: catalog:testing
-        version: 4.0.16(msw@2.7.3(@types/node@20.19.27)(typescript@5.9.3))(playwright@1.57.0)(vite@7.3.0(@types/node@20.19.27)(terser@5.39.0)(tsx@4.21.0)(yaml@2.8.2))(vitest@4.0.16)
-      '@vitest/coverage-istanbul':
-        specifier: catalog:testing
-        version: 4.0.16(vitest@4.0.16)
-      cross-env:
-        specifier: 'catalog:'
-        version: 10.1.0
-      eslint:
-        specifier: 'catalog:'
-        version: 9.39.2
-      prettier:
-        specifier: 'catalog:'
-        version: 3.7.4
-      rimraf:
-        specifier: 'catalog:'
-        version: 6.1.2
-      tshy:
-        specifier: 'catalog:'
-        version: 3.1.0
-      typescript:
-        specifier: 'catalog:'
-        version: 5.9.3
-      vitest:
-        specifier: catalog:testing
-        version: 4.0.16(@opentelemetry/api@1.9.0)(@types/node@20.19.27)(@vitest/browser-playwright@4.0.16)(jsdom@16.7.0)(msw@2.7.3(@types/node@20.19.27)(typescript@5.9.3))(terser@5.39.0)(tsx@4.21.0)(yaml@2.8.2)
-
-  sdk/playwrighttesting/microsoft-playwright-testing:
-    dependencies:
-      '@azure/core-rest-pipeline':
-        specifier: ^1.19.1
-        version: link:../../core/core-rest-pipeline
-      '@azure/identity':
-        specifier: ^4.3.1
-        version: 4.13.0
-      '@azure/logger':
-        specifier: ^1.1.4
-        version: link:../../core/logger
-      '@azure/storage-blob':
-        specifier: ^12.15.0
-        version: 12.29.1
-      tslib:
-        specifier: ^2.8.1
-        version: 2.8.1
-    devDependencies:
-      '@azure-tools/test-utils-vitest':
-        specifier: workspace:^
-        version: link:../../test-utils/test-utils-vitest
-      '@azure/dev-tool':
-        specifier: workspace:^
-        version: link:../../../common/tools/dev-tool
-      '@azure/eslint-plugin-azure-sdk':
-        specifier: workspace:^
-        version: link:../../../common/tools/eslint-plugin-azure-sdk
-      '@playwright/test':
-        specifier: ^1.51.1
-        version: 1.57.0
-      '@types/debug':
-        specifier: ^4.1.12
-        version: 4.1.12
-      '@types/node':
-        specifier: 'catalog:'
-        version: 20.19.27
-      '@vitest/browser-playwright':
-        specifier: catalog:testing
-        version: 4.0.16(msw@2.7.3(@types/node@20.19.27)(typescript@5.9.3))(playwright@1.57.0)(vite@7.3.0(@types/node@20.19.27)(terser@5.39.0)(tsx@4.21.0)(yaml@2.8.2))(vitest@4.0.16)
-      '@vitest/coverage-istanbul':
-        specifier: catalog:testing
-        version: 4.0.16(vitest@4.0.16)
-      cross-env:
-        specifier: 'catalog:'
-        version: 10.1.0
-      eslint:
-        specifier: 'catalog:'
-        version: 9.39.2
-      playwright:
-        specifier: catalog:testing
-        version: 1.57.0
-      prettier:
-        specifier: 'catalog:'
-        version: 3.7.4
-      rimraf:
-        specifier: 'catalog:'
-        version: 6.1.2
-      tshy:
-        specifier: 'catalog:'
-        version: 3.1.0
-      typescript:
-        specifier: 'catalog:'
-        version: 5.9.3
-      vitest:
-        specifier: catalog:testing
-        version: 4.0.16(@opentelemetry/api@1.9.0)(@types/node@20.19.27)(@vitest/browser-playwright@4.0.16)(jsdom@16.7.0)(msw@2.7.3(@types/node@20.19.27)(typescript@5.9.3))(terser@5.39.0)(tsx@4.21.0)(yaml@2.8.2)
-
   sdk/policy/arm-policy:
     dependencies:
       '@azure/core-auth':
@@ -25029,94 +24581,6 @@ importers:
         specifier: catalog:testing
         version: 4.0.16(@opentelemetry/api@1.9.0)(@types/node@20.19.27)(@vitest/browser-playwright@4.0.16)(jsdom@16.7.0)(msw@2.7.3(@types/node@20.19.27)(typescript@5.9.3))(terser@5.39.0)(tsx@4.21.0)(yaml@2.8.2)
 
-  sdk/quantum/quantum-jobs:
-    dependencies:
-      '@azure/core-auth':
-        specifier: ^1.9.0
-        version: link:../../core/core-auth
-      '@azure/core-client':
-        specifier: ^1.9.2
-        version: link:../../core/core-client
-      '@azure/core-paging':
-        specifier: ^1.6.2
-        version: link:../../core/core-paging
-      '@azure/core-rest-pipeline':
-        specifier: ^1.19.0
-        version: link:../../core/core-rest-pipeline
-      '@azure/core-tracing':
-        specifier: ^1.2.0
-        version: link:../../core/core-tracing
-      '@azure/core-util':
-        specifier: ^1.11.0
-        version: link:../../core/core-util
-      tslib:
-        specifier: ^2.8.1
-        version: 2.8.1
-    devDependencies:
-      '@azure-tools/test-credential':
-        specifier: workspace:^
-        version: link:../../test-utils/test-credential
-      '@azure-tools/test-recorder':
-        specifier: workspace:^
-        version: link:../../test-utils/recorder
-      '@azure-tools/test-utils-vitest':
-        specifier: workspace:^
-        version: link:../../test-utils/test-utils-vitest
-      '@azure/dev-tool':
-        specifier: workspace:^
-        version: link:../../../common/tools/dev-tool
-      '@azure/eslint-plugin-azure-sdk':
-        specifier: workspace:^
-        version: link:../../../common/tools/eslint-plugin-azure-sdk
-      '@azure/identity':
-        specifier: catalog:internal
-        version: 4.13.0
-      '@azure/logger':
-        specifier: ^1.1.4
-        version: link:../../core/logger
-      '@azure/storage-blob':
-        specifier: ^12.26.0
-        version: 12.29.1
-      '@types/node':
-        specifier: 'catalog:'
-        version: 20.19.27
-      '@vitest/browser-playwright':
-        specifier: catalog:testing
-        version: 4.0.16(msw@2.7.3(@types/node@20.19.27)(typescript@5.9.3))(playwright@1.57.0)(vite@7.3.0(@types/node@20.19.27)(terser@5.39.0)(tsx@4.21.0)(yaml@2.8.2))(vitest@4.0.16)
-      '@vitest/coverage-istanbul':
-        specifier: catalog:testing
-        version: 4.0.16(vitest@4.0.16)
-      autorest:
-        specifier: 'catalog:'
-        version: 3.7.2
-      cross-env:
-        specifier: 'catalog:'
-        version: 10.1.0
-      dotenv:
-        specifier: catalog:testing
-        version: 16.6.1
-      eslint:
-        specifier: 'catalog:'
-        version: 9.39.2
-      playwright:
-        specifier: catalog:testing
-        version: 1.57.0
-      prettier:
-        specifier: 'catalog:'
-        version: 3.7.4
-      rimraf:
-        specifier: 'catalog:'
-        version: 6.1.2
-      tshy:
-        specifier: 'catalog:'
-        version: 3.1.0
-      typescript:
-        specifier: 'catalog:'
-        version: 5.9.3
-      vitest:
-        specifier: catalog:testing
-        version: 4.0.16(@opentelemetry/api@1.9.0)(@types/node@20.19.27)(@vitest/browser-playwright@4.0.16)(jsdom@16.7.0)(msw@2.7.3(@types/node@20.19.27)(typescript@5.9.3))(terser@5.39.0)(tsx@4.21.0)(yaml@2.8.2)
-
   sdk/quota/arm-quota:
     dependencies:
       '@azure-rest/core-client':
@@ -25876,24 +25340,27 @@ importers:
 
   sdk/resourceconnector/arm-resourceconnector:
     dependencies:
+      '@azure-rest/core-client':
+        specifier: ^2.3.1
+        version: link:../../core/core-client-rest
       '@azure/abort-controller':
         specifier: ^2.1.2
         version: link:../../core/abort-controller
       '@azure/core-auth':
         specifier: ^1.9.0
         version: link:../../core/core-auth
-      '@azure/core-client':
-        specifier: ^1.9.2
-        version: link:../../core/core-client
       '@azure/core-lro':
-        specifier: ^2.5.3
-        version: 2.7.2
-      '@azure/core-paging':
-        specifier: ^1.6.2
-        version: link:../../core/core-paging
+        specifier: ^3.1.0
+        version: link:../../core/core-lro
       '@azure/core-rest-pipeline':
-        specifier: ^1.19.0
+        specifier: ^1.20.0
         version: link:../../core/core-rest-pipeline
+      '@azure/core-util':
+        specifier: ^1.12.0
+        version: link:../../core/core-util
+      '@azure/logger':
+        specifier: ^1.2.0
+        version: link:../../core/logger
       tslib:
         specifier: ^2.8.1
         version: 2.8.1
@@ -25910,12 +25377,12 @@ importers:
       '@azure/dev-tool':
         specifier: workspace:^
         version: link:../../../common/tools/dev-tool
+      '@azure/eslint-plugin-azure-sdk':
+        specifier: workspace:^
+        version: link:../../../common/tools/eslint-plugin-azure-sdk
       '@azure/identity':
         specifier: catalog:internal
         version: 4.13.0
-      '@azure/logger':
-        specifier: ^1.1.4
-        version: link:../../core/logger
       '@types/node':
         specifier: 'catalog:'
         version: 20.19.27
@@ -25931,9 +25398,15 @@ importers:
       dotenv:
         specifier: catalog:testing
         version: 16.6.1
+      eslint:
+        specifier: 'catalog:'
+        version: 9.39.2
       playwright:
         specifier: catalog:testing
         version: 1.57.0
+      prettier:
+        specifier: 'catalog:'
+        version: 3.7.4
       rimraf:
         specifier: 'catalog:'
         version: 6.1.2
@@ -29060,7 +28533,7 @@ importers:
         specifier: ^1.1.4
         version: link:../../core/logger
       '@azure/storage-common':
-        specifier: ^12.2.0-beta.1
+        specifier: ^12.2.0
         version: link:../storage-common
       events:
         specifier: ^3.0.0
@@ -29376,10 +28849,10 @@ importers:
         specifier: ^1.1.4
         version: link:../../core/logger
       '@azure/storage-blob':
-        specifier: ^12.30.0-beta.1
+        specifier: ^12.30.0
         version: link:../storage-blob
       '@azure/storage-common':
-        specifier: ^12.2.0-beta.1
+        specifier: ^12.2.0
         version: link:../storage-common
       events:
         specifier: ^3.3.0
@@ -29522,7 +28995,7 @@ importers:
         specifier: ^1.1.4
         version: link:../../core/logger
       '@azure/storage-common':
-        specifier: ^12.2.0-beta.1
+        specifier: ^12.2.0
         version: link:../storage-common
       events:
         specifier: ^3.0.0
@@ -29553,8 +29026,8 @@ importers:
         specifier: catalog:internal
         version: 4.13.0
       '@azure/storage-blob':
-        specifier: 12.30.0-beta.1
-        version: link:../storage-blob
+        specifier: 12.29.0
+        version: 12.29.0
       '@types/node':
         specifier: 'catalog:'
         version: 20.19.27
@@ -29729,7 +29202,7 @@ importers:
         specifier: ^1.1.4
         version: link:../../core/logger
       '@azure/storage-common':
-        specifier: ^12.2.0-beta.1
+        specifier: ^12.2.0
         version: link:../storage-common
       tslib:
         specifier: ^2.8.1
@@ -33612,12 +33085,21 @@ packages:
     resolution: {integrity: sha512-R5Af+4jtZZII2snLomaddMyElFtTCBRZp2qERPlP8PuISLU87eFYFM7xWzxjNd0yeiyQUBkamx/ZhOC8eWhCHA==}
     engines: {node: '>=18.0.0'}
 
+  '@azure/storage-blob@12.29.0':
+    resolution: {integrity: sha512-LKiRWOo6Xy/2DqDu+HInKTR5gzJ2mboVvEXbWZ1YJF5LIoQAIty0mJkqaqal0VxjPkXEHJDbFbJ5LE58eEj3dg==}
+    engines: {node: '>=20.0.0'}
+    deprecated: Unplanned Release
+
   '@azure/storage-blob@12.29.1':
     resolution: {integrity: sha512-7ktyY0rfTM0vo7HvtK6E3UvYnI9qfd6Oz6z/+92VhGRveWng3kJwMKeUpqmW/NmwcDNbxHpSlldG+vsUnRFnBg==}
     engines: {node: '>=20.0.0'}
 
   '@azure/storage-common@12.1.1':
     resolution: {integrity: sha512-eIOH1pqFwI6UmVNnDQvmFeSg0XppuzDLFeUNO/Xht7ODAzRLgGDh7h550pSxoA+lPDxBl1+D2m/KG3jWzCUjTg==}
+    engines: {node: '>=20.0.0'}
+
+  '@azure/storage-common@12.3.0':
+    resolution: {integrity: sha512-/OFHhy86aG5Pe8dP5tsp+BuJ25JOAl9yaMU3WZbkeoiFMHFtJ7tu5ili7qEdBXNW9G5lDB19trwyI6V49F/8iQ==}
     engines: {node: '>=20.0.0'}
 
   '@azure/storage-file-datalake@12.28.1':
@@ -33723,29 +33205,37 @@ packages:
     resolution: {integrity: sha512-Ir+AOibqzrIsL6ajt3Rz3LskB7OiMVHqltZmspbW/TJuTVuyOMirVqAkjfY6JISiLHgyNqicAC8AyHHGzNd/dA==}
     engines: {node: '>=0.1.90'}
 
-  '@cspell/cspell-bundled-dicts@9.4.0':
-    resolution: {integrity: sha512-Hm2gpMg/lRv4fKtiO2NfBiaJdFZVVb1V1a+IVhlD9qCuObLhCt60Oze2kD1dQzhbaIX756cs/eyxa5bQ5jihhQ==}
+  '@cspell/cspell-bundled-dicts@9.6.4':
+    resolution: {integrity: sha512-OIiPQuB7XQ6rnUv4KaCwHr9vNwbh6VZ4GfgQjcThT0oz0hkL6E5Ar3tq54K9jyqE9ylcHqpRuXUgnKgio6Hlig==}
     engines: {node: '>=20'}
 
-  '@cspell/cspell-json-reporter@9.4.0':
-    resolution: {integrity: sha512-TpHY7t13xNhcZF9bwOfgVIhcyPDamMnxU/TBYhf4mPtXPLrZ5gBTg3UZh0/9Zn3naMjmJtngdsLvB2wai9xBlQ==}
+  '@cspell/cspell-json-reporter@9.6.4':
+    resolution: {integrity: sha512-rGYSDnDWACrUyovfN8M/LM8CCFSKjYd2kehbNS7YMPk0Jk+rLk6sgt5WYu3ty45otXCkiO07bjUo/81wBLet7A==}
     engines: {node: '>=20'}
 
-  '@cspell/cspell-pipe@9.4.0':
-    resolution: {integrity: sha512-cI0sUe7SB99hJB1T6PhH/MpSrnml1kOekTCE+VH3Eb7zkVP5/mwJXs8BlufdvwBona+Cgkx6jeWlhFpxLc39Yg==}
+  '@cspell/cspell-performance-monitor@9.6.4':
+    resolution: {integrity: sha512-exuqxV1IVfZkasg57ZjUbaHeZDd6Mdbsbe5FBT3+XaVnRij+wpY2oEW9+kIOL5MOQE3bgQKgu37iMtA1NlCrGA==}
+    engines: {node: '>=20.18'}
+
+  '@cspell/cspell-pipe@9.6.4':
+    resolution: {integrity: sha512-vVxajTG9Ko01oHk8HPsMLajcLrd9AfkOk6vdgFI4FD7ZPq1CY0hfTmfmJ8bzZ4/QkqXglTvePdSgHQVJeltwWw==}
     engines: {node: '>=20'}
 
-  '@cspell/cspell-resolver@9.4.0':
-    resolution: {integrity: sha512-o9gbbdXlhxG2rqtGqQ7xZ8MGDDsPLbskBnTeuA++ix4Ch/HdjrBNmKReIGAEqJPfP+JGgoEKqFISHUDKAJ/ygQ==}
+  '@cspell/cspell-resolver@9.6.4':
+    resolution: {integrity: sha512-3xsgZEqqH9Uj8ZYLBnWbnsHz8wphgaeuWKcNDqgwoMjvwTMQLGoXjHht8Jx5yxd2e080lB7fJax8TaBdCzmFFA==}
     engines: {node: '>=20'}
 
-  '@cspell/cspell-service-bus@9.4.0':
-    resolution: {integrity: sha512-UottRlFPN6FGUfojx5HtUPZTeYXg2rf2HvO/HLh0KicirVYO16vFxTevg9MyOvw1EXSsDRz8ECANjiE7fnzBCQ==}
+  '@cspell/cspell-service-bus@9.6.4':
+    resolution: {integrity: sha512-oGNEzP1gJ43rLklJQjOk5PsfX0mZkLjV19djGptb9xZQeC2qAUxnaAbZtWt5CE8ni2iiTaRmgNRbUqAhRCnjew==}
     engines: {node: '>=20'}
 
-  '@cspell/cspell-types@9.4.0':
-    resolution: {integrity: sha512-vSpd50OfmthBH0aRFRLA2zJFtwli3ntHA0WAOJ8tIMLUCJgF3udooRXFeX3wR8ri69C9mc3864LC4inyRC/E9w==}
+  '@cspell/cspell-types@9.6.4':
+    resolution: {integrity: sha512-lf6d+BdMkJIFCxx2FpajLpqVGGyaGUNFU6jhEM6QUPeGuoA5et2kJXrL0NSY2uWLOVyYYc/FPjzlbe8trA9tBQ==}
     engines: {node: '>=20'}
+
+  '@cspell/cspell-worker@9.6.4':
+    resolution: {integrity: sha512-anacKDOZzDfPzuDeFOXGI2tFBYiRRCSnIZP/AOyJ9zTvEQcqq5p/ak18nJ5OQyDr2NG7ovJiCDT5YNiH2Vdg/g==}
+    engines: {node: '>=20.18'}
 
   '@cspell/dict-ada@4.1.1':
     resolution: {integrity: sha512-E+0YW9RhZod/9Qy2gxfNZiHJjCYFlCdI69br1eviQQWB8yOTJX0JHXLs79kOYhSW0kINPVUdvddEBe6Lu6CjGQ==}
@@ -33762,8 +33252,8 @@ packages:
   '@cspell/dict-companies@3.2.10':
     resolution: {integrity: sha512-bJ1qnO1DkTn7JYGXvxp8FRQc4yq6tRXnrII+jbP8hHmq5TX5o1Wu+rdfpoUQaMWTl6balRvcMYiINDesnpR9Bw==}
 
-  '@cspell/dict-cpp@6.0.15':
-    resolution: {integrity: sha512-N7MKK3llRNoBncygvrnLaGvmjo4xzVr5FbtAc9+MFGHK6/LeSySBupr1FM72XDaVSIsmBEe7sDYCHHwlI9Jb2w==}
+  '@cspell/dict-cpp@7.0.2':
+    resolution: {integrity: sha512-dfbeERiVNeqmo/npivdR6rDiBCqZi3QtjH2Z0HFcXwpdj6i97dX1xaKyK2GUsO/p4u1TOv63Dmj5Vm48haDpuA==}
 
   '@cspell/dict-cryptocurrencies@5.0.5':
     resolution: {integrity: sha512-R68hYYF/rtlE6T/dsObStzN5QZw+0aQBinAXuWCVqwdS7YZo0X33vGMfChkHaiCo3Z2+bkegqHlqxZF4TD3rUA==}
@@ -33792,14 +33282,14 @@ packages:
   '@cspell/dict-elixir@4.0.8':
     resolution: {integrity: sha512-CyfphrbMyl4Ms55Vzuj+mNmd693HjBFr9hvU+B2YbFEZprE5AG+EXLYTMRWrXbpds4AuZcvN3deM2XVB80BN/Q==}
 
-  '@cspell/dict-en-common-misspellings@2.1.11':
-    resolution: {integrity: sha512-2jcY494If1udvzd7MT2z/QH/RACUo/I02vIY4ttNdZhgYvUmRKhg8OBdrbzYo0lJOcc7XUb8rhIFQRHzxOSVeA==}
+  '@cspell/dict-en-common-misspellings@2.1.12':
+    resolution: {integrity: sha512-14Eu6QGqyksqOd4fYPuRb58lK1Va7FQK9XxFsRKnZU8LhL3N+kj7YKDW+7aIaAN/0WGEqslGP6lGbQzNti8Akw==}
 
-  '@cspell/dict-en-gb-mit@3.1.16':
-    resolution: {integrity: sha512-4PPdapCJslytxAVJu35Mv97qDyGmAQxtDE790T2bWNhcqN6gvRVAc/eTRaXkUIf21q1xCxxNNqpH4VfMup69rQ==}
+  '@cspell/dict-en-gb-mit@3.1.18':
+    resolution: {integrity: sha512-AXaMzbaxhSc32MSzKX0cpwT+Thv1vPfxQz1nTly1VHw3wQcwPqVFSqrLOYwa8VNqAPR45583nnhD6iqJ9YESoQ==}
 
-  '@cspell/dict-en_us@4.4.27':
-    resolution: {integrity: sha512-0y4vH2i5cFmi8sxkc4OlD2IlnqDznOtKczm4h6jA288g5VVrm3bhkYK6vcB8b0CoRKtYWKet4VEmHBP1yI+Qfw==}
+  '@cspell/dict-en_us@4.4.29':
+    resolution: {integrity: sha512-G3B27++9ziRdgbrY/G/QZdFAnMzzx17u8nCb2Xyd4q6luLpzViRM/CW3jA+Mb/cGT5zR/9N+Yz9SrGu1s0bq7g==}
 
   '@cspell/dict-filetypes@3.0.15':
     resolution: {integrity: sha512-uDMeqYlLlK476w/muEFQGBy9BdQWS0mQ7BJiy/iQv5XUWZxE2O54ZQd9nW8GyQMzAgoyg5SG4hf9l039Qt66oA==}
@@ -33813,14 +33303,14 @@ packages:
   '@cspell/dict-fsharp@1.1.1':
     resolution: {integrity: sha512-imhs0u87wEA4/cYjgzS0tAyaJpwG7vwtC8UyMFbwpmtw+/bgss+osNfyqhYRyS/ehVCWL17Ewx2UPkexjKyaBA==}
 
-  '@cspell/dict-fullstack@3.2.7':
-    resolution: {integrity: sha512-IxEk2YAwAJKYCUEgEeOg3QvTL4XLlyArJElFuMQevU1dPgHgzWElFevN5lsTFnvMFA1riYsVinqJJX0BanCFEg==}
+  '@cspell/dict-fullstack@3.2.8':
+    resolution: {integrity: sha512-J6EeoeThvx/DFrcA2rJiCA6vfqwJMbkG0IcXhlsmRZmasIpanmxgt90OEaUazbZahFiuJT8wrhgQ1QgD1MsqBw==}
 
   '@cspell/dict-gaming-terms@1.1.2':
     resolution: {integrity: sha512-9XnOvaoTBscq0xuD6KTEIkk9hhdfBkkvJAIsvw3JMcnp1214OCGW8+kako5RqQ2vTZR3Tnf3pc57o7VgkM0q1Q==}
 
-  '@cspell/dict-git@3.0.7':
-    resolution: {integrity: sha512-odOwVKgfxCQfiSb+nblQZc4ErXmnWEnv8XwkaI4sNJ7cNmojnvogYVeMqkXPjvfrgEcizEEA4URRD2Ms5PDk1w==}
+  '@cspell/dict-git@3.1.0':
+    resolution: {integrity: sha512-KEt9zGkxqGy2q1nwH4CbyqTSv5nadpn8BAlDnzlRcnL0Xb3LX9xTgSGShKvzb0bw35lHoYyLWN2ZKAqbC4pgGQ==}
 
   '@cspell/dict-golang@6.0.26':
     resolution: {integrity: sha512-YKA7Xm5KeOd14v5SQ4ll6afe9VSy3a2DWM7L9uBq4u3lXToRBQ1W5PRa+/Q9udd+DTURyVVnQ+7b9cnOlNxaRg==}
@@ -33849,8 +33339,8 @@ packages:
   '@cspell/dict-kotlin@1.1.1':
     resolution: {integrity: sha512-J3NzzfgmxRvEeOe3qUXnSJQCd38i/dpF9/t3quuWh6gXM+krsAXP75dY1CzDmS8mrJAlBdVBeAW5eAZTD8g86Q==}
 
-  '@cspell/dict-latex@4.0.4':
-    resolution: {integrity: sha512-YdTQhnTINEEm/LZgTzr9Voz4mzdOXH7YX+bSFs3hnkUHCUUtX/mhKgf1CFvZ0YNM2afjhQcmLaR9bDQVyYBvpA==}
+  '@cspell/dict-latex@5.0.0':
+    resolution: {integrity: sha512-HUrIqUVohM6P0+5b7BsdAdb0STIv0aaFBvguI7pLcreljlcX3FSPUxea7ticzNlCNeVrEaiEn/ws9m6rYUeuNw==}
 
   '@cspell/dict-lorem-ipsum@4.0.5':
     resolution: {integrity: sha512-9a4TJYRcPWPBKkQAJ/whCu4uCAEgv/O2xAaZEI0n4y1/l18Yyx8pBKoIX5QuVXjjmKEkK7hi5SxyIsH7pFEK9Q==}
@@ -33872,11 +33362,11 @@ packages:
   '@cspell/dict-monkeyc@1.0.12':
     resolution: {integrity: sha512-MN7Vs11TdP5mbdNFQP5x2Ac8zOBm97ARg6zM5Sb53YQt/eMvXOMvrep7+/+8NJXs0jkp70bBzjqU4APcqBFNAw==}
 
-  '@cspell/dict-node@5.0.8':
-    resolution: {integrity: sha512-AirZcN2i84ynev3p2/1NCPEhnNsHKMz9zciTngGoqpdItUb2bDt1nJBjwlsrFI78GZRph/VaqTVFwYikmncpXg==}
+  '@cspell/dict-node@5.0.9':
+    resolution: {integrity: sha512-hO+ga+uYZ/WA4OtiMEyKt5rDUlUyu3nXMf8KVEeqq2msYvAPdldKBGH7lGONg6R/rPhv53Rb+0Y1SLdoK1+7wQ==}
 
-  '@cspell/dict-npm@5.2.28':
-    resolution: {integrity: sha512-tjnBjpIJsgYMTqNSrL5YlvFcXdtc7gkrL1ZI+MPSJSYOoJ78yeegS5UrIIbH3VrQtbNYSS8YhlEVF+xN0G4E8Q==}
+  '@cspell/dict-npm@5.2.34':
+    resolution: {integrity: sha512-M2MtfmYeHIPBuC8esMU4JQXHKma7Xt7VyBWUk67B62KDu61sxebQ2HeizdqmN2sLEJsTkq3bZT5PGzHpZ0LEWQ==}
 
   '@cspell/dict-php@4.1.1':
     resolution: {integrity: sha512-EXelI+4AftmdIGtA8HL8kr4WlUE11OqCSVlnIgZekmTkEGSZdYnkFdiJ5IANSALtlQ1mghKjz+OFqVs6yowgWA==}
@@ -33896,8 +33386,8 @@ packages:
   '@cspell/dict-ruby@5.1.0':
     resolution: {integrity: sha512-9PJQB3cfkBULrMLp5kSAcFPpzf8oz9vFN+QYZABhQwWkGbuzCIXSorHrmWSASlx4yejt3brjaWS57zZ/YL5ZQQ==}
 
-  '@cspell/dict-rust@4.1.0':
-    resolution: {integrity: sha512-ysFxxKc3QjPWtPacbwxzz8sDOACHNShlhQpnBsDXAHN3LogmuBsQtfyuU30APqFjCOg9KwGciKYC/hcGxJCbiA==}
+  '@cspell/dict-rust@4.1.2':
+    resolution: {integrity: sha512-O1FHrumYcO+HZti3dHfBPUdnDFkI+nbYK3pxYmiM1sr+G0ebOd6qchmswS0Wsc6ZdEVNiPYJY/gZQR6jfW3uOg==}
 
   '@cspell/dict-scala@5.0.9':
     resolution: {integrity: sha512-AjVcVAELgllybr1zk93CJ5wSUNu/Zb5kIubymR/GAYkMyBdYFCZ3Zbwn4Zz8GJlFFAbazABGOu0JPVbeY59vGg==}
@@ -33905,8 +33395,8 @@ packages:
   '@cspell/dict-shell@1.1.2':
     resolution: {integrity: sha512-WqOUvnwcHK1X61wAfwyXq04cn7KYyskg90j4lLg3sGGKMW9Sq13hs91pqrjC44Q+lQLgCobrTkMDw9Wyl9nRFA==}
 
-  '@cspell/dict-software-terms@5.1.19':
-    resolution: {integrity: sha512-3leJLYvibbOnPsIUV/60WcSPxzRmgrx6/0QkqRi8cSsEuRY5/cbUU8Jc0/hKYCIhWJlnIWh5yx34Ep2s8QSIBw==}
+  '@cspell/dict-software-terms@5.1.21':
+    resolution: {integrity: sha512-3lAB4OXsf6rs5zbwe4/nKmwyAJAvjs5KTRrPckzHx7q9dYpviW+UxDyhevCCsRfmcu24OhYP7BVQWXxLvYk4xA==}
 
   '@cspell/dict-sql@2.2.1':
     resolution: {integrity: sha512-qDHF8MpAYCf4pWU8NKbnVGzkoxMNrFqBHyG/dgrlic5EQiKANCLELYtGlX5auIMDLmTf1inA0eNtv74tyRJ/vg==}
@@ -33929,20 +33419,24 @@ packages:
   '@cspell/dict-zig@1.0.0':
     resolution: {integrity: sha512-XibBIxBlVosU06+M6uHWkFeT0/pW5WajDRYdXG2CgHnq85b0TI/Ks0FuBJykmsgi2CAD3Qtx8UHFEtl/DSFnAQ==}
 
-  '@cspell/dynamic-import@9.4.0':
-    resolution: {integrity: sha512-d2fjLjzrKGUIn5hWK8gMuyAh2pqXSxBqOHpU1jR3jxbrO3MilunKNijaSstv7CZn067Jpc36VfaKQodaXNZzUA==}
+  '@cspell/dynamic-import@9.6.4':
+    resolution: {integrity: sha512-1VnL9ahT3s17DLWl4MeO1pYg7zcVT3X9cKynI2/U86zNK5xMGS5icvjp7X65tsCAVNcWOtkqVFfrxi7kWxn67g==}
     engines: {node: '>=20'}
 
-  '@cspell/filetypes@9.4.0':
-    resolution: {integrity: sha512-RMrYHkvPF0tHVFM+T4voEhX9sfYQrd/mnNbf6+O4CWUyLCz4NQ5H9yOgEIJwEcLu4y3NESGXFef/Jn5xo0CUfg==}
+  '@cspell/filetypes@9.6.4':
+    resolution: {integrity: sha512-a1aZ/8vGnhTknxTukjzo3m8CISyHW2MWnbedywg5SDEl5RMJitmzX90QZiQdSvEcqzqmtoAgSEZNBT2LX2gIKg==}
     engines: {node: '>=20'}
 
-  '@cspell/strong-weak-map@9.4.0':
-    resolution: {integrity: sha512-ui7mlXYmqElS/SmRubPBNWdkQVWgWbB6rjCurc+0owYXlnweItAMHTxC8mCWM/Au22SF1dB/JR8QBELFXLkTjQ==}
+  '@cspell/rpc@9.6.4':
+    resolution: {integrity: sha512-vGI1788Rx5Yml9N1/pD4zGd8Vrchi2Y01ADf9NiiOaNVVdf4PU1GCssLCsiIzhYQneErpQ8pJi/mS2F/QMZbRA==}
+    engines: {node: '>=20.18'}
+
+  '@cspell/strong-weak-map@9.6.4':
+    resolution: {integrity: sha512-AQrUbA0JUOEQgwItnfUQ6Ydk0hWY/uV3VhLwZWyrnT9eiQynmTnRTHtOCkkSl9+M4P0N4Raa2eGFRLcPAFksaw==}
     engines: {node: '>=20'}
 
-  '@cspell/url@9.4.0':
-    resolution: {integrity: sha512-nt88P6m20AaVbqMxsyPf8KqyWPaFEW2UANi0ijBxc2xTkD2KiUovxfZUYW6NMU9XBYZlovT5LztkEhst2yBcSA==}
+  '@cspell/url@9.6.4':
+    resolution: {integrity: sha512-h6VMlb7bDyGJfwLtipxxtHlT+ojzUXZz14AqZ/NEzY3LfOhfJTGpRcWLYFsgG/L0Ma4qjsYbPJt/Sj1C14j0VA==}
     engines: {node: '>=20'}
 
   '@epic-web/invariant@1.0.0':
@@ -34938,10 +34432,6 @@ packages:
   '@pinojs/redact@0.4.0':
     resolution: {integrity: sha512-k2ENnmBugE/rzQfEcdWHcCY+/FM3VLzH9cYEsbdsoqrvzAKRhUZeRNhAZvB8OitQJ1TBed3yqWtdjzS6wJKBwg==}
 
-  '@pkgr/core@0.2.9':
-    resolution: {integrity: sha512-QNqXyfVS2wm9hweSYD2O7F0G06uurj9kZ96TRQE5Y9hU7+tgdZwIkbAKc5Ocy1HxEY2kuDQa6cQ1WRs/O5LFKA==}
-    engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
-
   '@playwright/test@1.57.0':
     resolution: {integrity: sha512-6TyEnHgd6SArQO8UO2OMTxshln3QMWBtPGrOCgs3wVEmQmwyuNtB10IZMfmYDE0riwNR1cu4q+pPcxMVtaG3TA==}
     engines: {node: '>=18'}
@@ -35828,8 +35318,8 @@ packages:
     resolution: {integrity: sha512-y4Mg2tXshplEbSGzx7amzPwKKOCGuoSRP/CjEdwwk0FOGlUbq6lKuoyDZTNZkmxHdJtp54hdfY/JUrdL7Xfdug==}
     engines: {node: '>=14'}
 
-  commander@14.0.2:
-    resolution: {integrity: sha512-TywoWNNRbhoD0BXs1P3ZEScW8W5iKrnbithIl0YH+uCmBd0QpPOA8yc82DS3BIE5Ma6FnBVUsJ7wVUDz4dvOWQ==}
+  commander@14.0.3:
+    resolution: {integrity: sha512-H+y0Jo/T1RZ9qPP4Eh1pkcQcLRglraJaSLoyOtHxu6AapkjWVCy2Sit1QQ4x3Dng8qDlSsZEet7g5Pq06MvTgw==}
     engines: {node: '>=20'}
 
   commander@2.20.3:
@@ -35907,43 +35397,45 @@ packages:
     resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
     engines: {node: '>= 8'}
 
-  cspell-config-lib@9.4.0:
-    resolution: {integrity: sha512-CvQKSmK/DRIf3LpNx2sZth65pHW2AHngZqLkH3DTwnAPbiCAsE0XvCrVhvDfCNu/6uJIaa+NVHSs8GOf//DHBQ==}
+  cspell-config-lib@9.6.4:
+    resolution: {integrity: sha512-MecJNR9bIlcPBhyZFsXP6Q2n8qQ2IR9N9HiIz0yh0gBNVydp3LR5JITP5Ji8m7hexmZzVeoXms/dVN74XbS95g==}
     engines: {node: '>=20'}
 
-  cspell-dictionary@9.4.0:
-    resolution: {integrity: sha512-c2qscanRZChoHZFYI7KpvBMdy8i6wNwl2EflcNRrFiFOq67t9CgxLe54PafaqhrHGpBc8nElaZKciLvjj6Uscw==}
+  cspell-dictionary@9.6.4:
+    resolution: {integrity: sha512-Ik9ZQVqV/fJfMt5X6IkC7yHGVH46/qjcqCNWwrMSwvROLM3SemNxxZoLvh0wi0GXz9WF1lHcxLJVdeKUk6QB8g==}
     engines: {node: '>=20'}
 
-  cspell-gitignore@9.4.0:
-    resolution: {integrity: sha512-HMrzLmJBUMSpaMMkltlTAz/aVOrHxixyhKfg5WbFCJ5JYZO6Qu3/JU3wRoOFoud9449wRjLkvrGmbbL2+vO6Lw==}
+  cspell-gitignore@9.6.4:
+    resolution: {integrity: sha512-a8asE9BsjJgJ506WUGh5VHrTdVEE8hWELjCJB2atPrW6iY5e4aCIugy0gkRC1ZH9/TseadlmMLrFzHUkJUjzsg==}
     engines: {node: '>=20'}
     hasBin: true
 
-  cspell-glob@9.4.0:
-    resolution: {integrity: sha512-Q87Suj9oXrhoKck15qWorCizBjMNxG/k3NjnhKIAMrF+PdUa1Mpl0MOD+hqV1Wvwh1UHcIMYCP3bR3XpBbNx+Q==}
+  cspell-glob@9.6.4:
+    resolution: {integrity: sha512-253VrjbR8QU15h8GtpDQLX5Ti9uNSuNod2T7f8YEElQOb9I/kUXoCj3Cq4P390IC99klqSHIDxHsxd77ex19lA==}
     engines: {node: '>=20'}
 
-  cspell-grammar@9.4.0:
-    resolution: {integrity: sha512-ie7OQ4Neflo+61bMzoLR7GtlZfMBAm2KL1U4iNqh15wUE5fDbvXeN15H5lu+gcO8BwYvC5wxZknw1x62/J8+3Q==}
+  cspell-grammar@9.6.4:
+    resolution: {integrity: sha512-rvZyTB45/XSRWx7eAsrvTTAZvBTREr/2G2JWVMdqrptFyq1XReAKHhw/x1HJkNgWC9LKAK3bVQJpjLsNG37U9A==}
     engines: {node: '>=20'}
     hasBin: true
 
-  cspell-io@9.4.0:
-    resolution: {integrity: sha512-8w30dqlO54H9w6WGlvZhHI5kytVbF3bYPqKJAZLWKEO36L2mdpf6/abx/FA4yVLJ56wmH1x0N0ZK32wNRl5C6A==}
+  cspell-io@9.6.4:
+    resolution: {integrity: sha512-bmvJ4yn5QK2FZWTkZA4sx2qJqIi8BrUUUV7W209drSwkYjhJtXqP0RyF6Qx4Xuu2D1s0UilEtO5Jd+E9UJkQ6w==}
     engines: {node: '>=20'}
 
-  cspell-lib@9.4.0:
-    resolution: {integrity: sha512-ajjioE59IEDNUPawfaBpiMfGC32iKPkuYd4T9ftguuef8VvyKRifniiUi1nxwGgAhzSfxHvWs7qdT+29Pp5TMQ==}
+  cspell-lib@9.6.4:
+    resolution: {integrity: sha512-fUodKcIHTwvokuowB25XyFzBxlk73yj1QRw2por3BxDz9fAim1zAIohAPAnGuzj3LowYnTMjHLYE7RFDUSxy5A==}
     engines: {node: '>=20'}
 
-  cspell-trie-lib@9.4.0:
-    resolution: {integrity: sha512-bySJTm8XDiJAoC1MDo4lE/KpSNxydo13ZETC8TF7Hb3rbWI1c6o5eZ4+i/tkG3M94OvKV91+MeAvoMCe7GGgAw==}
+  cspell-trie-lib@9.6.4:
+    resolution: {integrity: sha512-JKwyRtyybbaTrixwI1OgU5Hvva2Z5zHVWl92WBa9U7KijAyiD/Ehp3T3DCYuBwGks7egw7MgWPySkXXnpme6mw==}
     engines: {node: '>=20'}
+    peerDependencies:
+      '@cspell/cspell-types': 9.6.4
 
-  cspell@9.4.0:
-    resolution: {integrity: sha512-ZvXO+EY/G0/msu7jwRiVk0sXL/zB7DMJLBvjSUrK82uVbDoDxHwXxUuOz2UVnk2+J61//ldIZrjxVK8KMvaJlg==}
-    engines: {node: '>=20'}
+  cspell@9.6.4:
+    resolution: {integrity: sha512-rZJmgcyBGKX3KcJ3KC9JYVHeKhDEVbmCheSp8eRGMYw6MCG9o7FHqQjGA/u4lEu4A0psr7ACP/5ym/QHyntRbA==}
+    engines: {node: '>=20.18'}
     hasBin: true
 
   cssom@0.3.8:
@@ -35955,9 +35447,6 @@ packages:
   cssstyle@2.3.0:
     resolution: {integrity: sha512-AZL67abkUzIuvcHqk7c09cezpGNcxUxU4Ioi/05xHk4DQeTkWmGYftIE6ctU6AEt+Gn4n1lDStOtj7FKycP71A==}
     engines: {node: '>=8'}
-
-  csv-parse@6.1.0:
-    resolution: {integrity: sha512-CEE+jwpgLn+MmtCpVcPtiCZpVtB6Z2OKPTr34pycYYoL7sxdOkXDdQ4lRiw6ioC0q6BLqhc6cKweCVvral8yhw==}
 
   data-urls@2.0.0:
     resolution: {integrity: sha512-X5eWTSXO/BJmpdIKCRuKUgSCgAN0OwliVK3yPKbwIWU1Tdw5BRajxlzMidvh+gwko9AfQ9zIj52pzF91Q3YAvQ==}
@@ -36102,9 +35591,9 @@ packages:
     resolution: {integrity: sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw==}
     engines: {node: '>=0.12'}
 
-  env-paths@3.0.0:
-    resolution: {integrity: sha512-dtJUTepzMW3Lm/NPxRf3wP4642UWhjL2sQxc+ym2YMj1m/H2zDNQOlezafzkHwn6sMstjHTwG6iQQsctDW/b1A==}
-    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+  env-paths@4.0.0:
+    resolution: {integrity: sha512-pxP8eL2SwwaTRi/KHYwLYXinDs7gL3jxFcBYmEdYfZmZXbaVDvdppd0XBU8qVz03rDfKZMXg1omHCbsJjZrMsw==}
+    engines: {node: '>=20'}
 
   environment@1.1.0:
     resolution: {integrity: sha512-xUtoPkMggbz0MPyPiIWr1Kp4aeWJjDZ6SMvURhimjdZgsRuDplF5/s9hcgGhyXMhs+6vpnuoiZ2kFiu3FMnS8Q==}
@@ -36303,8 +35792,8 @@ packages:
   fast-deep-equal@3.1.3:
     resolution: {integrity: sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==}
 
-  fast-equals@5.4.0:
-    resolution: {integrity: sha512-jt2DW/aNFNwke7AUd+Z+e6pz39KO5rzdbbFCg2sGafS4mk13MI7Z8O5z9cADNn5lhGODIgLwug6TZO2ctf7kcw==}
+  fast-equals@6.0.0:
+    resolution: {integrity: sha512-PFhhIGgdM79r5Uztdj9Zb6Tt1zKafqVfdMGwVca1z5z6fbX7DmsySSuJd8HiP6I1j505DCS83cLxo5rmSNeVEA==}
     engines: {node: '>=6.0.0'}
 
   fast-glob@3.3.3:
@@ -36494,7 +35983,7 @@ packages:
 
   glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
-    deprecated: Glob versions prior to v9 are no longer supported
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
 
   glob@8.1.0:
     resolution: {integrity: sha512-r8hpEjiQEYlF2QU0df3dS+nxxSIreXQS1qRhMJM0Q5NDdR386C7jb7Hwwod8Fgiuex+k0GFjgft18yvxm5XoCQ==}
@@ -36772,6 +36261,10 @@ packages:
   is-regex@1.2.1:
     resolution: {integrity: sha512-MjYsKHO5O7mCsmRGxWcLWheFqN9DJ/2TmngvjKXihe6efViPqc274+Fx/4fYj/r03+ESvBdTXK0V6tA3rgez1g==}
     engines: {node: '>= 0.4'}
+
+  is-safe-filename@0.1.1:
+    resolution: {integrity: sha512-4SrR7AdnY11LHfDKTZY1u6Ga3RuxZdl3YKWWShO5iyuG5h8QS4GD2tOb04peBJ5I7pXbR+CGBNEhTcwK+FzN3g==}
+    engines: {node: '>=20'}
 
   is-stream@2.0.1:
     resolution: {integrity: sha512-hFoiJiTl63nn+kstHGBtewWSKnQLpyb155KHheA1l39uvtO9nWIop1p3udqPcUd/xbF1VLMO4n7OI6p7RbngDg==}
@@ -37517,8 +37010,8 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
-  prettier-plugin-packagejson@2.5.20:
-    resolution: {integrity: sha512-G8cowPh+QmJJECTZlrPDKWkVVcwrFjF2rGcw546w3N8blLoc4szSs8UUPfFVxHUNLUjiru71Ah83g1lZkeK9Bw==}
+  prettier-plugin-packagejson@2.5.22:
+    resolution: {integrity: sha512-G6WalmoUssKF8ZXkni0+n4324K+gG143KPysSQNW+FrR0XyNb3BdRxchGC/Q1FE/F702p7/6KU7r4mv0WSWbzA==}
     peerDependencies:
       prettier: '>= 1.16.0'
     peerDependenciesMeta:
@@ -37873,8 +37366,8 @@ packages:
   sort-object-keys@2.0.1:
     resolution: {integrity: sha512-R89fO+z3x7hiKPXX5P0qim+ge6Y60AjtlW+QQpRozrrNcR1lw9Pkpm5MLB56HoNvdcLHL4wbpq16OcvGpEDJIg==}
 
-  sort-package-json@3.5.0:
-    resolution: {integrity: sha512-moY4UtptUuP5sPuu9H9dp8xHNel7eP5/Kz/7+90jTvC0IOiPH2LigtRM/aSFSxreaWoToHUVUpEV4a2tAs2oKQ==}
+  sort-package-json@3.6.0:
+    resolution: {integrity: sha512-fyJsPLhWvY7u2KsKPZn1PixbXp+1m7V8NWqU8CvgFRbMEX41Ffw1kD8n0CfJiGoaSfoAvbrqRRl/DcHO8omQOQ==}
     engines: {node: '>=20'}
     hasBin: true
 
@@ -37999,10 +37492,6 @@ packages:
     resolution: {integrity: sha512-gKE1q9t4qBDkWqJElji6HSM2OBLK6QooA0LjYg5TYJLE7rca95u2/RKpMZ15WfW9Ri3qbFJRfiS0zbSQqvlf4w==}
     engines: {node: 20 || >=22}
     hasBin: true
-
-  synckit@0.11.11:
-    resolution: {integrity: sha512-MeQTA1r0litLUf0Rp/iisCaL8761lKAZHaimlbGK4j0HysC4PLfqygQj9srcs0m2RdtDYnF8UuYyKpbjHYp7Jw==}
-    engines: {node: ^14.18.0 || >=16.0.0}
 
   tapable@2.3.0:
     resolution: {integrity: sha512-g9ljZiwki/LfxmQADO3dEY1CbpmXT5Hm2fJ+QaGKwSXUylMybePR7/67YW7jOrrvjEgL1Fmz5kzyAjWVWLlucg==}
@@ -38137,38 +37626,38 @@ packages:
   tunnel-agent@0.6.0:
     resolution: {integrity: sha512-McnNiV1l8RYeY8tBgEpuodCC1mLUdbSN+CYBL7kJsJNInOP8UjDDEwdk6Mw60vdLLrr5NHKZhMAOSrR2NZuQ+w==}
 
-  turbo-darwin-64@2.7.2:
-    resolution: {integrity: sha512-dxY3X6ezcT5vm3coK6VGixbrhplbQMwgNsCsvZamS/+/6JiebqW9DKt4NwpgYXhDY2HdH00I7FWs3wkVuan4rA==}
+  turbo-darwin-64@2.8.10:
+    resolution: {integrity: sha512-A03fXh+B7S8mL3PbdhTd+0UsaGrhfyPkODvzBDpKRY7bbeac4MDFpJ7I+Slf2oSkCEeSvHKR7Z4U71uKRUfX7g==}
     cpu: [x64]
     os: [darwin]
 
-  turbo-darwin-arm64@2.7.2:
-    resolution: {integrity: sha512-1bXmuwPLqNFt3mzrtYcVx1sdJ8UYb124Bf48nIgcpMCGZy3kDhgxNv1503kmuK/37OGOZbsWSQFU4I08feIuSg==}
+  turbo-darwin-arm64@2.8.10:
+    resolution: {integrity: sha512-sidzowgWL3s5xCHLeqwC9M3s9M0i16W1nuQF3Mc7fPHpZ+YPohvcbVFBB2uoRRHYZg6yBnwD4gyUHKTeXfwtXA==}
     cpu: [arm64]
     os: [darwin]
 
-  turbo-linux-64@2.7.2:
-    resolution: {integrity: sha512-kP+TiiMaiPugbRlv57VGLfcjFNsFbo8H64wMBCPV2270Or2TpDCBULMzZrvEsvWFjT3pBFvToYbdp8/Kw0jAQg==}
+  turbo-linux-64@2.8.10:
+    resolution: {integrity: sha512-YK9vcpL3TVtqonB021XwgaQhY9hJJbKKUhLv16osxV0HkcQASQWUqR56yMge7puh6nxU67rQlTq1b7ksR1T3KA==}
     cpu: [x64]
     os: [linux]
 
-  turbo-linux-arm64@2.7.2:
-    resolution: {integrity: sha512-VDJwQ0+8zjAfbyY6boNaWfP6RIez4ypKHxwkuB6SrWbOSk+vxTyW5/hEjytTwK8w/TsbKVcMDyvpora8tEsRFw==}
+  turbo-linux-arm64@2.8.10:
+    resolution: {integrity: sha512-3+j2tL0sG95iBJTm+6J8/45JsETQABPqtFyYjVjBbi6eVGdtNTiBmHNKrbvXRlQ3ZbUG75bKLaSSDHSEEN+btQ==}
     cpu: [arm64]
     os: [linux]
 
-  turbo-windows-64@2.7.2:
-    resolution: {integrity: sha512-rPjqQXVnI6A6oxgzNEE8DNb6Vdj2Wwyhfv3oDc+YM3U9P7CAcBIlKv/868mKl4vsBtz4ouWpTQNXG8vljgJO+w==}
+  turbo-windows-64@2.8.10:
+    resolution: {integrity: sha512-hdeF5qmVY/NFgiucf8FW0CWJWtyT2QPm5mIsX0W1DXAVzqKVXGq+Zf+dg4EUngAFKjDzoBeN6ec2Fhajwfztkw==}
     cpu: [x64]
     os: [win32]
 
-  turbo-windows-arm64@2.7.2:
-    resolution: {integrity: sha512-tcnHvBhO515OheIFWdxA+qUvZzNqqcHbLVFc1+n+TJ1rrp8prYicQtbtmsiKgMvr/54jb9jOabU62URAobnB7g==}
+  turbo-windows-arm64@2.8.10:
+    resolution: {integrity: sha512-QGdr/Q8LWmj+ITMkSvfiz2glf0d7JG0oXVzGL3jxkGqiBI1zXFj20oqVY0qWi+112LO9SVrYdpHS0E/oGFrMbQ==}
     cpu: [arm64]
     os: [win32]
 
-  turbo@2.7.2:
-    resolution: {integrity: sha512-5JIA5aYBAJSAhrhbyag1ZuMSgUZnHtI+Sq3H8D3an4fL8PeF+L1yYvbEJg47akP1PFfATMf5ehkqFnxfkmuwZQ==}
+  turbo@2.8.10:
+    resolution: {integrity: sha512-OxbzDES66+x7nnKGg2MwBA1ypVsZoDTLHpeaP4giyiHSixbsiTaMyeJqbEyvBdp5Cm28fc+8GG6RdQtic0ijwQ==}
     hasBin: true
 
   type-check@0.3.2:
@@ -38201,9 +37690,9 @@ packages:
       eslint: ^8.57.0 || ^9.0.0
       typescript: '>=4.8.4 <6.0.0'
 
-  typescript@4.2.4:
-    resolution: {integrity: sha512-V+evlYHZnQkaz8TRBuxTA92yZBPotr5H+WhQ7bD3hZUndx5tGOa1fuCgeSjxAzM1RiN5IzvadIXTVefuuwZCRg==}
-    engines: {node: '>=4.2.0'}
+  typescript@5.4.5:
+    resolution: {integrity: sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ==}
+    engines: {node: '>=14.17'}
     hasBin: true
 
   typescript@5.6.1-rc:
@@ -39173,6 +38662,25 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@azure/storage-blob@12.29.0':
+    dependencies:
+      '@azure/abort-controller': 2.1.2
+      '@azure/core-auth': 1.10.1
+      '@azure/core-client': 1.10.1
+      '@azure/core-http-compat': 2.3.1
+      '@azure/core-lro': 2.7.2
+      '@azure/core-paging': 1.6.2
+      '@azure/core-rest-pipeline': 1.22.2
+      '@azure/core-tracing': 1.3.1
+      '@azure/core-util': 1.13.1
+      '@azure/core-xml': 1.5.0
+      '@azure/logger': 1.3.0
+      '@azure/storage-common': 12.3.0
+      events: 3.3.0
+      tslib: 2.8.1
+    transitivePeerDependencies:
+      - supports-color
+
   '@azure/storage-blob@12.29.1':
     dependencies:
       '@azure/abort-controller': 2.1.2
@@ -39193,6 +38701,20 @@ snapshots:
       - supports-color
 
   '@azure/storage-common@12.1.1':
+    dependencies:
+      '@azure/abort-controller': 2.1.2
+      '@azure/core-auth': 1.10.1
+      '@azure/core-http-compat': 2.3.1
+      '@azure/core-rest-pipeline': 1.22.2
+      '@azure/core-tracing': 1.3.1
+      '@azure/core-util': 1.13.1
+      '@azure/logger': 1.3.0
+      events: 3.3.0
+      tslib: 2.8.1
+    transitivePeerDependencies:
+      - supports-color
+
+  '@azure/storage-common@12.3.0':
     dependencies:
       '@azure/abort-controller': 2.1.2
       '@azure/core-auth': 1.10.1
@@ -39391,14 +38913,14 @@ snapshots:
 
   '@colors/colors@1.6.0': {}
 
-  '@cspell/cspell-bundled-dicts@9.4.0':
+  '@cspell/cspell-bundled-dicts@9.6.4':
     dependencies:
       '@cspell/dict-ada': 4.1.1
       '@cspell/dict-al': 1.1.1
       '@cspell/dict-aws': 4.0.17
       '@cspell/dict-bash': 4.2.2
       '@cspell/dict-companies': 3.2.10
-      '@cspell/dict-cpp': 6.0.15
+      '@cspell/dict-cpp': 7.0.2
       '@cspell/dict-cryptocurrencies': 5.0.5
       '@cspell/dict-csharp': 4.0.8
       '@cspell/dict-css': 4.0.19
@@ -39408,16 +38930,16 @@ snapshots:
       '@cspell/dict-docker': 1.1.17
       '@cspell/dict-dotnet': 5.0.11
       '@cspell/dict-elixir': 4.0.8
-      '@cspell/dict-en-common-misspellings': 2.1.11
-      '@cspell/dict-en-gb-mit': 3.1.16
-      '@cspell/dict-en_us': 4.4.27
+      '@cspell/dict-en-common-misspellings': 2.1.12
+      '@cspell/dict-en-gb-mit': 3.1.18
+      '@cspell/dict-en_us': 4.4.29
       '@cspell/dict-filetypes': 3.0.15
       '@cspell/dict-flutter': 1.1.1
       '@cspell/dict-fonts': 4.0.5
       '@cspell/dict-fsharp': 1.1.1
-      '@cspell/dict-fullstack': 3.2.7
+      '@cspell/dict-fullstack': 3.2.8
       '@cspell/dict-gaming-terms': 1.1.2
-      '@cspell/dict-git': 3.0.7
+      '@cspell/dict-git': 3.1.0
       '@cspell/dict-golang': 6.0.26
       '@cspell/dict-google': 1.0.9
       '@cspell/dict-haskell': 4.0.6
@@ -39427,24 +38949,24 @@ snapshots:
       '@cspell/dict-julia': 1.1.1
       '@cspell/dict-k8s': 1.0.12
       '@cspell/dict-kotlin': 1.1.1
-      '@cspell/dict-latex': 4.0.4
+      '@cspell/dict-latex': 5.0.0
       '@cspell/dict-lorem-ipsum': 4.0.5
       '@cspell/dict-lua': 4.0.8
       '@cspell/dict-makefile': 1.0.5
       '@cspell/dict-markdown': 2.0.14(@cspell/dict-css@4.0.19)(@cspell/dict-html-symbol-entities@4.0.5)(@cspell/dict-html@4.0.14)(@cspell/dict-typescript@3.2.3)
       '@cspell/dict-monkeyc': 1.0.12
-      '@cspell/dict-node': 5.0.8
-      '@cspell/dict-npm': 5.2.28
+      '@cspell/dict-node': 5.0.9
+      '@cspell/dict-npm': 5.2.34
       '@cspell/dict-php': 4.1.1
       '@cspell/dict-powershell': 5.0.15
       '@cspell/dict-public-licenses': 2.0.15
       '@cspell/dict-python': 4.2.25
       '@cspell/dict-r': 2.1.1
       '@cspell/dict-ruby': 5.1.0
-      '@cspell/dict-rust': 4.1.0
+      '@cspell/dict-rust': 4.1.2
       '@cspell/dict-scala': 5.0.9
       '@cspell/dict-shell': 1.1.2
-      '@cspell/dict-software-terms': 5.1.19
+      '@cspell/dict-software-terms': 5.1.21
       '@cspell/dict-sql': 2.2.1
       '@cspell/dict-svelte': 1.0.7
       '@cspell/dict-swift': 2.0.6
@@ -39453,19 +38975,25 @@ snapshots:
       '@cspell/dict-vue': 3.0.5
       '@cspell/dict-zig': 1.0.0
 
-  '@cspell/cspell-json-reporter@9.4.0':
+  '@cspell/cspell-json-reporter@9.6.4':
     dependencies:
-      '@cspell/cspell-types': 9.4.0
+      '@cspell/cspell-types': 9.6.4
 
-  '@cspell/cspell-pipe@9.4.0': {}
+  '@cspell/cspell-performance-monitor@9.6.4': {}
 
-  '@cspell/cspell-resolver@9.4.0':
+  '@cspell/cspell-pipe@9.6.4': {}
+
+  '@cspell/cspell-resolver@9.6.4':
     dependencies:
       global-directory: 4.0.1
 
-  '@cspell/cspell-service-bus@9.4.0': {}
+  '@cspell/cspell-service-bus@9.6.4': {}
 
-  '@cspell/cspell-types@9.4.0': {}
+  '@cspell/cspell-types@9.6.4': {}
+
+  '@cspell/cspell-worker@9.6.4':
+    dependencies:
+      cspell-lib: 9.6.4
 
   '@cspell/dict-ada@4.1.1': {}
 
@@ -39479,7 +39007,7 @@ snapshots:
 
   '@cspell/dict-companies@3.2.10': {}
 
-  '@cspell/dict-cpp@6.0.15': {}
+  '@cspell/dict-cpp@7.0.2': {}
 
   '@cspell/dict-cryptocurrencies@5.0.5': {}
 
@@ -39499,11 +39027,11 @@ snapshots:
 
   '@cspell/dict-elixir@4.0.8': {}
 
-  '@cspell/dict-en-common-misspellings@2.1.11': {}
+  '@cspell/dict-en-common-misspellings@2.1.12': {}
 
-  '@cspell/dict-en-gb-mit@3.1.16': {}
+  '@cspell/dict-en-gb-mit@3.1.18': {}
 
-  '@cspell/dict-en_us@4.4.27': {}
+  '@cspell/dict-en_us@4.4.29': {}
 
   '@cspell/dict-filetypes@3.0.15': {}
 
@@ -39513,11 +39041,11 @@ snapshots:
 
   '@cspell/dict-fsharp@1.1.1': {}
 
-  '@cspell/dict-fullstack@3.2.7': {}
+  '@cspell/dict-fullstack@3.2.8': {}
 
   '@cspell/dict-gaming-terms@1.1.2': {}
 
-  '@cspell/dict-git@3.0.7': {}
+  '@cspell/dict-git@3.1.0': {}
 
   '@cspell/dict-golang@6.0.26': {}
 
@@ -39537,7 +39065,7 @@ snapshots:
 
   '@cspell/dict-kotlin@1.1.1': {}
 
-  '@cspell/dict-latex@4.0.4': {}
+  '@cspell/dict-latex@5.0.0': {}
 
   '@cspell/dict-lorem-ipsum@4.0.5': {}
 
@@ -39554,9 +39082,9 @@ snapshots:
 
   '@cspell/dict-monkeyc@1.0.12': {}
 
-  '@cspell/dict-node@5.0.8': {}
+  '@cspell/dict-node@5.0.9': {}
 
-  '@cspell/dict-npm@5.2.28': {}
+  '@cspell/dict-npm@5.2.34': {}
 
   '@cspell/dict-php@4.1.1': {}
 
@@ -39572,13 +39100,13 @@ snapshots:
 
   '@cspell/dict-ruby@5.1.0': {}
 
-  '@cspell/dict-rust@4.1.0': {}
+  '@cspell/dict-rust@4.1.2': {}
 
   '@cspell/dict-scala@5.0.9': {}
 
   '@cspell/dict-shell@1.1.2': {}
 
-  '@cspell/dict-software-terms@5.1.19': {}
+  '@cspell/dict-software-terms@5.1.21': {}
 
   '@cspell/dict-sql@2.2.1': {}
 
@@ -39594,16 +39122,18 @@ snapshots:
 
   '@cspell/dict-zig@1.0.0': {}
 
-  '@cspell/dynamic-import@9.4.0':
+  '@cspell/dynamic-import@9.6.4':
     dependencies:
-      '@cspell/url': 9.4.0
+      '@cspell/url': 9.6.4
       import-meta-resolve: 4.2.0
 
-  '@cspell/filetypes@9.4.0': {}
+  '@cspell/filetypes@9.6.4': {}
 
-  '@cspell/strong-weak-map@9.4.0': {}
+  '@cspell/rpc@9.6.4': {}
 
-  '@cspell/url@9.4.0': {}
+  '@cspell/strong-weak-map@9.6.4': {}
+
+  '@cspell/url@9.6.4': {}
 
   '@epic-web/invariant@1.0.0': {}
 
@@ -40675,8 +40205,6 @@ snapshots:
 
   '@pinojs/redact@0.4.0': {}
 
-  '@pkgr/core@0.2.9': {}
-
   '@playwright/test@1.57.0':
     dependencies:
       playwright: 1.57.0
@@ -41721,7 +41249,7 @@ snapshots:
 
   commander@10.0.1: {}
 
-  commander@14.0.2: {}
+  commander@14.0.3: {}
 
   commander@2.20.3:
     optional: true
@@ -41804,59 +41332,62 @@ snapshots:
       shebang-command: 2.0.0
       which: 2.0.2
 
-  cspell-config-lib@9.4.0:
+  cspell-config-lib@9.6.4:
     dependencies:
-      '@cspell/cspell-types': 9.4.0
+      '@cspell/cspell-types': 9.6.4
       comment-json: 4.5.1
       smol-toml: 1.6.0
       yaml: 2.8.2
 
-  cspell-dictionary@9.4.0:
+  cspell-dictionary@9.6.4:
     dependencies:
-      '@cspell/cspell-pipe': 9.4.0
-      '@cspell/cspell-types': 9.4.0
-      cspell-trie-lib: 9.4.0
-      fast-equals: 5.4.0
+      '@cspell/cspell-performance-monitor': 9.6.4
+      '@cspell/cspell-pipe': 9.6.4
+      '@cspell/cspell-types': 9.6.4
+      cspell-trie-lib: 9.6.4(@cspell/cspell-types@9.6.4)
+      fast-equals: 6.0.0
 
-  cspell-gitignore@9.4.0:
+  cspell-gitignore@9.6.4:
     dependencies:
-      '@cspell/url': 9.4.0
-      cspell-glob: 9.4.0
-      cspell-io: 9.4.0
+      '@cspell/url': 9.6.4
+      cspell-glob: 9.6.4
+      cspell-io: 9.6.4
 
-  cspell-glob@9.4.0:
+  cspell-glob@9.6.4:
     dependencies:
-      '@cspell/url': 9.4.0
+      '@cspell/url': 9.6.4
       picomatch: 4.0.3
 
-  cspell-grammar@9.4.0:
+  cspell-grammar@9.6.4:
     dependencies:
-      '@cspell/cspell-pipe': 9.4.0
-      '@cspell/cspell-types': 9.4.0
+      '@cspell/cspell-pipe': 9.6.4
+      '@cspell/cspell-types': 9.6.4
 
-  cspell-io@9.4.0:
+  cspell-io@9.6.4:
     dependencies:
-      '@cspell/cspell-service-bus': 9.4.0
-      '@cspell/url': 9.4.0
+      '@cspell/cspell-service-bus': 9.6.4
+      '@cspell/url': 9.6.4
 
-  cspell-lib@9.4.0:
+  cspell-lib@9.6.4:
     dependencies:
-      '@cspell/cspell-bundled-dicts': 9.4.0
-      '@cspell/cspell-pipe': 9.4.0
-      '@cspell/cspell-resolver': 9.4.0
-      '@cspell/cspell-types': 9.4.0
-      '@cspell/dynamic-import': 9.4.0
-      '@cspell/filetypes': 9.4.0
-      '@cspell/strong-weak-map': 9.4.0
-      '@cspell/url': 9.4.0
+      '@cspell/cspell-bundled-dicts': 9.6.4
+      '@cspell/cspell-performance-monitor': 9.6.4
+      '@cspell/cspell-pipe': 9.6.4
+      '@cspell/cspell-resolver': 9.6.4
+      '@cspell/cspell-types': 9.6.4
+      '@cspell/dynamic-import': 9.6.4
+      '@cspell/filetypes': 9.6.4
+      '@cspell/rpc': 9.6.4
+      '@cspell/strong-weak-map': 9.6.4
+      '@cspell/url': 9.6.4
       clear-module: 4.1.2
-      cspell-config-lib: 9.4.0
-      cspell-dictionary: 9.4.0
-      cspell-glob: 9.4.0
-      cspell-grammar: 9.4.0
-      cspell-io: 9.4.0
-      cspell-trie-lib: 9.4.0
-      env-paths: 3.0.0
+      cspell-config-lib: 9.6.4
+      cspell-dictionary: 9.6.4
+      cspell-glob: 9.6.4
+      cspell-grammar: 9.6.4
+      cspell-io: 9.6.4
+      cspell-trie-lib: 9.6.4(@cspell/cspell-types@9.6.4)
+      env-paths: 4.0.0
       gensequence: 8.0.8
       import-fresh: 3.3.1
       resolve-from: 5.0.0
@@ -41864,29 +41395,29 @@ snapshots:
       vscode-uri: 3.1.0
       xdg-basedir: 5.1.0
 
-  cspell-trie-lib@9.4.0:
+  cspell-trie-lib@9.6.4(@cspell/cspell-types@9.6.4):
     dependencies:
-      '@cspell/cspell-pipe': 9.4.0
-      '@cspell/cspell-types': 9.4.0
-      gensequence: 8.0.8
+      '@cspell/cspell-types': 9.6.4
 
-  cspell@9.4.0:
+  cspell@9.6.4:
     dependencies:
-      '@cspell/cspell-json-reporter': 9.4.0
-      '@cspell/cspell-pipe': 9.4.0
-      '@cspell/cspell-types': 9.4.0
-      '@cspell/dynamic-import': 9.4.0
-      '@cspell/url': 9.4.0
+      '@cspell/cspell-json-reporter': 9.6.4
+      '@cspell/cspell-performance-monitor': 9.6.4
+      '@cspell/cspell-pipe': 9.6.4
+      '@cspell/cspell-types': 9.6.4
+      '@cspell/cspell-worker': 9.6.4
+      '@cspell/dynamic-import': 9.6.4
+      '@cspell/url': 9.6.4
       ansi-regex: 6.2.2
       chalk: 5.6.2
       chalk-template: 1.1.2
-      commander: 14.0.2
-      cspell-config-lib: 9.4.0
-      cspell-dictionary: 9.4.0
-      cspell-gitignore: 9.4.0
-      cspell-glob: 9.4.0
-      cspell-io: 9.4.0
-      cspell-lib: 9.4.0
+      commander: 14.0.3
+      cspell-config-lib: 9.6.4
+      cspell-dictionary: 9.6.4
+      cspell-gitignore: 9.6.4
+      cspell-glob: 9.6.4
+      cspell-io: 9.6.4
+      cspell-lib: 9.6.4
       fast-json-stable-stringify: 2.1.0
       flatted: 3.3.3
       semver: 7.7.3
@@ -41902,8 +41433,6 @@ snapshots:
     dependencies:
       cssom: 0.3.8
     optional: true
-
-  csv-parse@6.1.0: {}
 
   data-urls@2.0.0:
     dependencies:
@@ -42018,7 +41547,9 @@ snapshots:
 
   entities@4.5.0: {}
 
-  env-paths@3.0.0: {}
+  env-paths@4.0.0:
+    dependencies:
+      is-safe-filename: 0.1.1
 
   environment@1.1.0: {}
 
@@ -42286,7 +41817,7 @@ snapshots:
 
   fast-deep-equal@3.1.3: {}
 
-  fast-equals@5.4.0: {}
+  fast-equals@6.0.0: {}
 
   fast-glob@3.3.3:
     dependencies:
@@ -42772,6 +42303,8 @@ snapshots:
       gopd: 1.2.0
       has-tostringtag: 1.0.2
       hasown: 2.0.2
+
+  is-safe-filename@0.1.1: {}
 
   is-stream@2.0.1: {}
 
@@ -43591,10 +43124,9 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier-plugin-packagejson@2.5.20(prettier@3.7.4):
+  prettier-plugin-packagejson@2.5.22(prettier@3.7.4):
     dependencies:
-      sort-package-json: 3.5.0
-      synckit: 0.11.11
+      sort-package-json: 3.6.0
     optionalDependencies:
       prettier: 3.7.4
 
@@ -44017,7 +43549,7 @@ snapshots:
 
   sort-object-keys@2.0.1: {}
 
-  sort-package-json@3.5.0:
+  sort-package-json@3.6.0:
     dependencies:
       detect-indent: 7.0.2
       detect-newline: 4.0.1
@@ -44137,10 +43669,6 @@ snapshots:
       path-scurry: 2.0.1
       rimraf: 6.1.2
       tshy: 3.1.0
-
-  synckit@0.11.11:
-    dependencies:
-      '@pkgr/core': 0.2.9
 
   tapable@2.3.0: {}
 
@@ -44293,32 +43821,32 @@ snapshots:
     dependencies:
       safe-buffer: 5.2.1
 
-  turbo-darwin-64@2.7.2:
+  turbo-darwin-64@2.8.10:
     optional: true
 
-  turbo-darwin-arm64@2.7.2:
+  turbo-darwin-arm64@2.8.10:
     optional: true
 
-  turbo-linux-64@2.7.2:
+  turbo-linux-64@2.8.10:
     optional: true
 
-  turbo-linux-arm64@2.7.2:
+  turbo-linux-arm64@2.8.10:
     optional: true
 
-  turbo-windows-64@2.7.2:
+  turbo-windows-64@2.8.10:
     optional: true
 
-  turbo-windows-arm64@2.7.2:
+  turbo-windows-arm64@2.8.10:
     optional: true
 
-  turbo@2.7.2:
+  turbo@2.8.10:
     optionalDependencies:
-      turbo-darwin-64: 2.7.2
-      turbo-darwin-arm64: 2.7.2
-      turbo-linux-64: 2.7.2
-      turbo-linux-arm64: 2.7.2
-      turbo-windows-64: 2.7.2
-      turbo-windows-arm64: 2.7.2
+      turbo-darwin-64: 2.8.10
+      turbo-darwin-arm64: 2.8.10
+      turbo-linux-64: 2.8.10
+      turbo-linux-arm64: 2.8.10
+      turbo-windows-64: 2.8.10
+      turbo-windows-arm64: 2.8.10
 
   type-check@0.3.2:
     dependencies:
@@ -44366,7 +43894,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  typescript@4.2.4: {}
+  typescript@5.4.5: {}
 
   typescript@5.6.1-rc: {}
 
