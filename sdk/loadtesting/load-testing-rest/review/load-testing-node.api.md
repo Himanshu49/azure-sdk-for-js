@@ -333,7 +333,7 @@ export function isUnexpected(response: LoadTestRunStop200Response | LoadTestRunS
 export function isUnexpected(response: LoadTestRunGetLatestInsights200Response | LoadTestRunGetLatestInsightsDefaultResponse): response is LoadTestRunGetLatestInsightsDefaultResponse;
 
 // @public (undocumented)
-export function isUnexpected(response: LoadTestRunPatchLatestInsights200Response | LoadTestRunPatchLatestInsightsDefaultResponse): response is LoadTestRunPatchLatestInsightsDefaultResponse;
+export function isUnexpected(response: LoadTestRunUpdateLatestInsights200Response | LoadTestRunUpdateLatestInsightsDefaultResponse): response is LoadTestRunUpdateLatestInsightsDefaultResponse;
 
 // @public (undocumented)
 export function isUnexpected(response: LoadTestRunGenerateInsights202Response | LoadTestRunGenerateInsightsLogicalResponse | LoadTestRunGenerateInsightsDefaultResponse): response is LoadTestRunGenerateInsightsDefaultResponse;
@@ -1182,7 +1182,7 @@ export type LoadTestRunGetAppComponentsParameters = RequestParameters;
 // @public (undocumented)
 export interface LoadTestRunGetLatestInsights {
     get(options?: LoadTestRunGetLatestInsightsParameters): StreamableMethod<LoadTestRunGetLatestInsights200Response | LoadTestRunGetLatestInsightsDefaultResponse>;
-    patch(options: LoadTestRunPatchLatestInsightsParameters): StreamableMethod<LoadTestRunPatchLatestInsights200Response | LoadTestRunPatchLatestInsightsDefaultResponse>;
+    patch(options: LoadTestRunUpdateLatestInsightsParameters): StreamableMethod<LoadTestRunUpdateLatestInsights200Response | LoadTestRunUpdateLatestInsightsDefaultResponse>;
 }
 
 // @public
@@ -1534,42 +1534,6 @@ export interface LoadTestRunListTestRunsTestIdsQueryParam {
     value: string[];
 }
 
-// @public
-export interface LoadTestRunPatchLatestInsights200Response extends HttpResponse {
-    // (undocumented)
-    body: TestRunInsightsOutput;
-    // (undocumented)
-    status: "200";
-}
-
-// @public (undocumented)
-export interface LoadTestRunPatchLatestInsightsBodyParam {
-    body: TestRunInsightsResourceMergeAndPatch;
-}
-
-// @public (undocumented)
-export interface LoadTestRunPatchLatestInsightsDefaultHeaders {
-    "x-ms-error-code"?: string;
-}
-
-// @public (undocumented)
-export interface LoadTestRunPatchLatestInsightsDefaultResponse extends HttpResponse {
-    // (undocumented)
-    body: ErrorResponse;
-    // (undocumented)
-    headers: RawHttpHeaders & LoadTestRunPatchLatestInsightsDefaultHeaders;
-    // (undocumented)
-    status: string;
-}
-
-// @public (undocumented)
-export interface LoadTestRunPatchLatestInsightsMediaTypesParam {
-    contentType: "application/merge-patch+json";
-}
-
-// @public (undocumented)
-export type LoadTestRunPatchLatestInsightsParameters = LoadTestRunPatchLatestInsightsMediaTypesParam & LoadTestRunPatchLatestInsightsBodyParam & RequestParameters;
-
 // @public (undocumented)
 export interface LoadTestRunStop {
     post(options?: LoadTestRunStopParameters): StreamableMethod<LoadTestRunStop200Response | LoadTestRunStopDefaultResponse>;
@@ -1600,6 +1564,42 @@ export interface LoadTestRunStopDefaultResponse extends HttpResponse {
 
 // @public (undocumented)
 export type LoadTestRunStopParameters = RequestParameters;
+
+// @public
+export interface LoadTestRunUpdateLatestInsights200Response extends HttpResponse {
+    // (undocumented)
+    body: TestRunInsightsOutput;
+    // (undocumented)
+    status: "200";
+}
+
+// @public (undocumented)
+export interface LoadTestRunUpdateLatestInsightsBodyParam {
+    body: TestRunInsightsResourceMergeAndPatch;
+}
+
+// @public (undocumented)
+export interface LoadTestRunUpdateLatestInsightsDefaultHeaders {
+    "x-ms-error-code"?: string;
+}
+
+// @public (undocumented)
+export interface LoadTestRunUpdateLatestInsightsDefaultResponse extends HttpResponse {
+    // (undocumented)
+    body: ErrorResponse;
+    // (undocumented)
+    headers: RawHttpHeaders & LoadTestRunUpdateLatestInsightsDefaultHeaders;
+    // (undocumented)
+    status: string;
+}
+
+// @public (undocumented)
+export interface LoadTestRunUpdateLatestInsightsMediaTypesParam {
+    contentType: "application/merge-patch+json";
+}
+
+// @public (undocumented)
+export type LoadTestRunUpdateLatestInsightsParameters = LoadTestRunUpdateLatestInsightsMediaTypesParam & LoadTestRunUpdateLatestInsightsBodyParam & RequestParameters;
 
 // @public
 export type ManagedIdentityType = string;
